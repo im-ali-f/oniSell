@@ -10,20 +10,21 @@
 <body>
     <div class="wholePage">
         <div class="logo">logo</div>
-        <div class="separator homePageMargin"></div>
-        <div class="menues homePageMargin">
+        <div class="menus homePageMargin">
             <a href="#" class="addAdv">آگهی جدید</a>
             <a href="#" class="aboutUs">درباره ما</a>
-            <a href="#"class="support">پشتیبانی</a>
+            <a href="#" class="support">پشتیبانی</a>
+            
         </div>
+        <div class="separator"></div>
+
         <div class="homeText homePageMargin">
             <p class="homeTextTxt">آنی سل ﭘﺎﯾﮕﺎه ﺧﺮﯾﺪ و ﻓﺮوش ﺑﯽ‌واﺳﻄﻪ‌
-                اﮔﻪ دﻧﺒﺎل ﭼﯿﺰی ﻫﺴﺘﯽ، ﺷﻬﺮت رو اﻧﺘﺨﺎب ﮐﻦ و ﺗﻮ دﺳﺘﻪ‌ﺑﻨﺪی‌ﻫﺎ ﺑﻪ دﻧﺒﺎﻟﺶ ﺑﮕﺮد. اﮔﺮ ﻫﻢ ﻣﯽ‌ﺧﻮای ﭼﯿﺰی ﺑﻔﺮوﺷﯽ، ﭼﻨﺪ ﺗﺎ ﻋﮑﺲ ﺧﻮب ازش ﺑﮕﯿﺮ و آگهی بزار.
-            </p>
+               <br> اﮔﻪ دﻧﺒﺎل ﭼﯿﺰی ﻫﺴﺘﯽ، ﺷﻬﺮت رو اﻧﺘﺨﺎب ﮐﻦ و ﺗﻮ دﺳﺘﻪ‌ﺑﻨﺪی‌ﻫﺎ ﺑﻪ دﻧﺒﺎﻟﺶ ﺑﮕﺮد. اﮔﺮ ﻫﻢ ﻣﯽ‌ﺧﻮای ﭼﯿﺰی ﺑﻔﺮوﺷﯽ، ﭼﻨﺪ ﺗﺎ ﻋﮑﺲ ﺧﻮب ازش ﺑﮕﯿﺮ و آگهی بزار
         </div>
-        <div class="search homePageMargin">
+        <div class="searchSection homePageMargin">
             <form action="homePage.php" method="post">
-                <input type="search" name="searchCity" id="searchCity">
+                <input type="search" name="searchCity" id="searchCity" placeholder="جست و جوی شهر">
             </form>
         </div>
         <div class="mostViewedCitysSection homePageMargin">
