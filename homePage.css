@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    top: 0;
+}
+:root{
+    --primaryColor:#28d6d9;
+    --secondaryColor:#e5f9ff;
+    --mainwhite:rgb(232, 230, 230);
+    --mainBlack:rgb(54, 60, 60);
+    --mainGrey:#7c7c7c;
+    --mainTransition:all 0.3s linear;
+    --mainRed:#db2777;
+    --bodyColor:#e4eeee;
+}
+body{
+  background-color: var(--bodyColor);
+}  
+html { 
+    font-size: 62.5%;
+} 
+.wholePage{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 5vh;
+}
+.homePageMargin{
+    margin-top: 3.5vh;
+}
+.separator{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+    box-shadow: 0px 1px 0px rgba(0,0,0,.12);
+}
