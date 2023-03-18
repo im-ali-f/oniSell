@@ -111,3 +111,10 @@ html {
     border:3px solid var(--active);
     transition: all ease-in-out 0.2s;
 }
+.logo{
+    margin: auto;
+}
+.logo img{
+    width: 20vh;
+    height:20vh;
+}
