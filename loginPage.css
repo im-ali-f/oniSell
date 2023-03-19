@@ -70,3 +70,62 @@ html {
     padding: 8px;
     box-shadow: 0px 1px 0px rgba(0,0,0,.12);
 }
+.textInput{
+    width: 100%;
+    height: 4rem;
+    color: var(--mainTextGray);
+    font-family: onifont;
+    font-size: 20px;
+    border-radius: 8px;
+    direction: rtl;
+    transition: all ease-in-out 0.2s;
+    border: 3px solid var(--invisible);
+
+}
+.textInput:hover{
+    border:3px solid var(--active);
+    transition: all ease-in-out 0.2s;
+
+}
+.textInput:focus{
+    border:3px solid var(--active);
+    transition: all ease-in-out 0.2s;
+}
+.logo{
+    margin: auto;
+}
+.logo img{
+    width: 20vh;
+    height:20vh;
+}
+.BTN{
+    width: 10rem;
+    height: 5rem;
+    color: var(--mainTextGrayDarker);
+    font-family: onifont;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: all ease-in-out 0.2s;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.BTN:hover{
+    color: var(--mainTextGreen);
+    background-color: var(--mainTextGray);
+    border:3px solid var(--active);
+    transition: all ease-in-out 0.2s;
+}
+.loginSection{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loginForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
