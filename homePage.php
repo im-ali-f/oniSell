@@ -15,7 +15,7 @@
             <img src="/assets/images/logonomy-1679158691376.svg" alt="OniSellLogo">
         </div>
         <div class="menus homePageMargin">
-            <a href="#" class="addAdv">آگهی جدید</a>
+            <a href="loginPage.php" class="addAdv">آگهی جدید</a>
             <a href="#" class="aboutUs">درباره ما</a>
             <a href="#" class="support">پشتیبانی</a>
 
@@ -31,11 +31,6 @@
                 <input type="search" name="searchCity" id="searchCity" placeholder="جست و جوی شهر">
             </form>
             <div id="suggested">
-                <!-- 
-                <div class="suggestedList">
-                    <div class="suggestedCity" id="suggested_city_1">قزوین</div>
-                </div>
-                -->
             </div>
         </div>
         <div class="mostViewedCitysSection homePageMargin">
