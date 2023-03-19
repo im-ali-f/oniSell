@@ -28,9 +28,15 @@
         </div>
         <div class="searchSection homePageMargin">
             <form action="homePage.php" method="post">
-                <input type="search" name="searchCity" id="searchCity" onkeyup="showHint(this.value)" placeholder="جست و جوی شهر">
+                <input type="search" name="searchCity" id="searchCity" placeholder="جست و جوی شهر">
             </form>
-            <div id="suggested"></div>
+            <div id="suggested">
+                <!-- 
+                <div class="suggestedList">
+                    <div class="suggestedCity" id="suggested_city_1">قزوین</div>
+                </div>
+                -->
+            </div>
         </div>
         <div class="mostViewedCitysSection homePageMargin">
             <p class="mostViewedCitysTxt">شهر های پر بازدید</p>
@@ -40,7 +46,7 @@
 
         <div class="socialMedias homePageMargin">ffff</div>
     </div>
-    <script src="homePage.js"></script>
+    <script type="module" src="homePage.js"></script>
 </body>
 
 </html>

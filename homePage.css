@@ -10,8 +10,10 @@
 :root{
     --bodyColor:#D3D3D3;
     --mainElements:#A9A9A9;
+    --mainElementsLighter:#d1cccc;
+    --mainElementsLight:#bcb8b8;
 
-    
+
     --mainTextGreen:#7CDF7C;
     --mainTextGreenDarker:#6cd56c;
     --mainTextGreenLighter:#92ec92;
@@ -117,4 +119,30 @@ html {
 .logo img{
     width: 20vh;
     height:20vh;
+}
+.suggestedList{
+    background-color: var(--mainElementsLighter);
+    max-height: 20rem;
+    margin-top:1rem;
+    direction: rtl;
+    overflow: auto;
+}
+.suggestedCity{
+    height: 3rem;
+    background-color: var(--mainElementsLight);
+    margin-bottom: 0.5rem;
+    color: var(--mainTextGreenLighter);
+    font-family: onifont;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+}
+.suggestedCity:hover{
+    border-radius:10px;
+    transition: all 0.2s ease-in-out;
+    background-color: var(--mainTextGrayDarker);
 }
