@@ -108,6 +108,7 @@ html {
     transition: all ease-in-out 0.2s;
     margin-top: 1rem;
     cursor: pointer;
+    border: 3px solid var(--invisible);
 }
 .BTN:hover{
     color: var(--mainTextGreen);
