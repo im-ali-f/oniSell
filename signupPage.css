@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    top: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+:root{
+    --bodyColor:#D3D3D3;
+    --mainElements:#A9A9A9;
+    --mainElementsLighter:#d1cccc;
+    --mainElementsLight:#bcb8b8;
+
+
+    --mainTextGreen:#7CDF7C;
+    --mainTextGreenDarker:#6cd56c;
+    --mainTextGreenLighter:#92ec92;
+    --mainTextGray:#808080;
+    --mainTextGrayDarker:#6a6868;
+
+    
+    --active:#72c372;
+    --invisible:rgba(255, 255, 255, 0);
+}
+@font-face {
+    font-family: onifont;
+    src: url(/oniSell/fonts/azarShiva.ttf);
+}
+body{
+    background-color: var(--bodyColor);
+}  
+html { 
+    font-size: 62.5%;
+} 
+.wholePage{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    color: var(--mainTextGreen);
+    font-family: onifont;
+    font-size: 20px;
+    border-radius: 8px;
+    direction: rtl;
+    background-color: var(--mainElements);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    padding: 3rem;
+}
+.signupPageMargin{
+    margin-bottom: 3.5vh !important;
+}
+.separator{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+    box-shadow: 0px 1px 0px rgba(0,0,0,.12);
+}
+.textInput{
+    width: 100%;
+    height: 4rem;
+    color: var(--mainTextGray);
+    font-family: onifont;
+    font-size: 20px;
+    border-radius: 8px;
+    direction: rtl;
+    transition: all ease-in-out 0.2s;
+    border: 3px solid var(--invisible);
+
+}
+.textInput:hover{
+    border:3px solid var(--active);
+    transition: all ease-in-out 0.2s;
+
+}
+.textInput:focus{
+    border:3px solid var(--active);
+    transition: all ease-in-out 0.2s;
+}
+.logo{
+    margin: auto;
+}
+.logo img{
+    width: 20vh;
+    height:20vh;
+}
+.BTN{
+    width: 10rem;
+    height: 5rem;
+    color: var(--mainTextGrayDarker);
+    font-family: onifont;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: all ease-in-out 0.2s;
+    margin-top: 1rem;
+    cursor: pointer;
+    border: 3px solid var(--invisible);
+}
+.BTN:hover{
+    color: var(--mainTextGreen);
+    background-color: var(--mainTextGray);
+    border:3px solid var(--active);
+    transition: all ease-in-out 0.2s;
+}
+.signupSection{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.signupForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
