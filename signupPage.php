@@ -17,7 +17,7 @@
             </div>
             <div class="signupSection">
                 <p class="signupText">اطلاعات را برای ورود وارد کنید</p>
-                <form class="signupForm" action="signup.php" method="post">
+                <form class="signupForm" action="signup.php" method="post" require>
                     Username<input type="text" class="textInput signupPageMargin" name="userName" id="userName">
                     Email<input type="email" class="textInput signupPageMargin" name="email" id="email">
                     Password <input type="password" class="textInput signupPageMargin" name="password1" id="password1">

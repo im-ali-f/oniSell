@@ -12,7 +12,9 @@
     --mainElements:#A9A9A9;
     --mainElementsLighter:#d1cccc;
     --mainElementsLight:#bcb8b8;
-
+    --mainElementGreen:#7CDF7C;
+    --mainElementGreenDarker:#6cd56c;
+    --mainElementGreenLighter:#92ec92;
 
     --mainTextGreen:#7CDF7C;
     --mainTextGreenDarker:#6cd56c;
@@ -21,7 +23,7 @@
     --mainTextGrayDarker:#6a6868;
 
     
-    --active:#72c372;
+    --active:#A9A9A9;
     --invisible:rgba(255, 255, 255, 0);
 }
 @font-face {
@@ -43,12 +45,12 @@ html {
     align-items: center;
 }
 .container{
-    color: var(--mainTextGreen);
+    color: var(--mainTextGray);
     font-family: onifont;
     font-size: 20px;
     border-radius: 8px;
     direction: rtl;
-    background-color: var(--mainElements);
+    background-color: var(--mainElementGreen);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,7 +75,7 @@ html {
 .textInput{
     width: 100%;
     height: 4rem;
-    color: var(--mainTextGray);
+    color: var(--mainTextGrayDarker);
     font-family: onifont;
     font-size: 20px;
     border-radius: 8px;
@@ -101,7 +103,7 @@ html {
 .BTN{
     width: 10rem;
     height: 5rem;
-    color: var(--mainTextGrayDarker);
+    color: var(--mainTextGreenDarker);
     font-family: onifont;
     font-size: 20px;
     border-radius: 8px;
@@ -111,8 +113,8 @@ html {
     border: 3px solid var(--invisible);
 }
 .BTN:hover{
-    color: var(--mainTextGreen);
-    background-color: var(--mainTextGray);
+    color: var(--mainTextGray);
+    background-color: var(--mainTextGreen);
     border:3px solid var(--active);
     transition: all ease-in-out 0.2s;
 }
