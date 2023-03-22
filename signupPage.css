@@ -15,13 +15,14 @@
     --mainElementGreen:#7CDF7C;
     --mainElementGreenDarker:#6cd56c;
     --mainElementGreenLighter:#92ec92;
+    --errorElement:rgb(225, 165, 165);
 
     --mainTextGreen:#7CDF7C;
     --mainTextGreenDarker:#6cd56c;
     --mainTextGreenLighter:#92ec92;
     --mainTextGray:#808080;
     --mainTextGrayDarker:#6a6868;
-
+    --errorText:rgb(191, 50, 50);
     
     --active:#A9A9A9;
     --invisible:rgba(255, 255, 255, 0);
@@ -131,4 +132,24 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.errorSection{
+    background-color: var(--errorElement);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--errorText);
+    border-radius: 8px;
+    margin-top: 1.5vh;
+}
+.redirectBTN{
+    margin-left: 1.5rem;
+    margin-top:0 !important;
+}
+.redirectBTN:hover{
+    color: var(--mainTextGreen);
+    background-color: var(--mainTextGrayDarker);
+    border:3px solid var(--active);
+    transition: all ease-in-out 0.2s;
 }
