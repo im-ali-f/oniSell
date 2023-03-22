@@ -12,14 +12,14 @@
     --mainElements:#A9A9A9;
     --mainElementsLighter:#d1cccc;
     --mainElementsLight:#bcb8b8;
-
+    --errorElement:rgb(225, 165, 165);
 
     --mainTextGreen:#7CDF7C;
     --mainTextGreenDarker:#6cd56c;
     --mainTextGreenLighter:#92ec92;
     --mainTextGray:#808080;
     --mainTextGrayDarker:#6a6868;
-
+    --errorText:rgb(191, 50, 50);
     
     --active:#72c372;
     --invisible:rgba(255, 255, 255, 0);
@@ -129,4 +129,14 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.errorSection{
+    background-color: var(--errorElement);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--errorText);
+    border-radius: 8px;
+    margin-top: 1.5vh;
 }

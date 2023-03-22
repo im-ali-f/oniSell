@@ -21,7 +21,7 @@
                     <?php
                     if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         try {
-                            $db = new PDO("mysql:host=www.onisell.ir;dbname=xxx", "xxx", "xxx");
+                            $db = new PDO("mysql:host=www.onisell.ir;dbname=fijmaclt_accounts", "fijmaclt", "bd83Y7t3rF");
                         } catch (PDOException $e) {
                             die("ye error !" . $e->getmessage());
                         }
