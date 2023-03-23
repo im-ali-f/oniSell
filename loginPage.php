@@ -1,6 +1,8 @@
 <?php
-                    session_start();
 
+use PhpMyAdmin\Scripts;
+
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,20 +37,19 @@
                         $queryFindUser = "SELECT * FROM `acc` WHERE `email` LIKE '$email' AND `pass` LIKE '$pass'";
                         $resultFindUser = $db->query($queryFindUser);
                         $rowUser = $resultFindUser->fetch();
-                        if(is_array($rowUser)){
+                        if (is_array($rowUser)) {
                             if ($rowUser["email"] == $email && $rowUser["pass"] == $pass) {
                                 echo "now you are logged in $email , $pass !";
-                            $_SESSION['id'] = $rowUser['id'];
-                            $_SESSION['name'] = $rowUser['name'];
-                            $_SESSION['email'] = $rowUser['email'];
+                                $_SESSION['id'] = $rowUser['id'];
+                                $_SESSION['name'] = $rowUser['name'];
+                                $_SESSION['email'] = $rowUser['email'];
+                                echo "<script>window.location.href = \"http://onisell.ir/\";</script>";
                             } else {
                                 echo "<div class=\"error\"> نام کاربری یا رمز عبور اشتباه است</div>";
                             }
-                        }
-                        else{
+                        } else {
                             echo "<div class=\"error\"> نام کاربری یا رمز عبور اشتباه است</div>";
                         }
-                        
                     }
 
 
