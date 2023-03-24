@@ -19,22 +19,22 @@
 
             دسته بندی<div class="group formElement divSelect">
                 <select id="selectGroup" class="select" required>
-                    <option value="Option 1">Option 1</option>
-                    <option value="Option 2">Option 2</option>
-                    <option value="Option 3">Option 3</option>
-                    <option value="Option 4">Option 4</option>
-                    <option value="Option 5">Option 5</option>
-                    <option value="Option length">Option that has too long of a value to fit</option>
+                    <option value="">یکی از شاخه ها را انتخاب کنید</option>
+                    <option value="realestate">املاک</option>
+                    <option value="vehicle">وسیله نقلیه</option>
+                    <option value="digital">لوازم دیجیتال</option>
+                    <option value="house">خانه و اشپزخانه</option>
+                    <option value="service">سرویس و خدمات</option>
+                    <option value="personal">وسایل شخصی</option>
+                    <option value="entertainment">سرگرمی و فراغت</option>
+                    <option value="social">اجتماعی</option>
+                    <option value="equipment">تجهیزات صنعتی</option>
                 </select>
             </div>
             زیر شاخه<div class="subGroup formElement divSelect">
-                <select id="selectSubGroup" class="select" required>
-                    <option value="Option 1">Option 1</option>
-                    <option value="Option 2">Option 2</option>
-                    <option value="Option 3">Option 3</option>
-                    <option value="Option 4">Option 4</option>
-                    <option value="Option 5">Option 5</option>
-                    <option value="Option length">Option that has too long of a value to fit</option>
+                <select id="selectSubGroup" class="select" required disabled>
+                    <option value=""></option>
+                    
                 </select>
             </div>
             شهر<div class="city formElement divSelect">
@@ -63,6 +63,6 @@
         </form>
     </div>
 </body>
-<script src="select2.js"></script>
+<script src="newAdvPage.js"></script>
 
 </html>
