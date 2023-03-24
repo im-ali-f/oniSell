@@ -12,13 +12,13 @@
 <body>
     <div class="menu"></div>
     <div class="wholePage">
-        <form class="advForm" action="createNewAdvertisement.php" method="post" enctype="multipart/form-data">
-            موضوع <input class="advInput formElement" type="text" name="title" id="title" placeholder="موضوع آگهی">
-            توضیحات محصول<textarea class="advInput formElement" name="text" id="text" cols="30" rows="10" placeholder=" توضیحات محصول و آگهی"></textarea>
-            
+        <form class="advForm" action="createNewAdvertisement.php" method="post" enctype="multipart/form-data" >
+            موضوع <input class="advInput formElement" type="text" name="title" id="title" placeholder="موضوع آگهی" required>
+            توضیحات محصول<textarea class="advInput formElement" name="text" id="text" cols="30" rows="10" placeholder=" توضیحات محصول و آگهی" required></textarea>
+
 
             دسته بندی<div class="group formElement divSelect">
-                <select id="selectGroup" class="select">
+                <select id="selectGroup" class="select" required>
                     <option value="Option 1">Option 1</option>
                     <option value="Option 2">Option 2</option>
                     <option value="Option 3">Option 3</option>
@@ -28,7 +28,7 @@
                 </select>
             </div>
             زیر شاخه<div class="subGroup formElement divSelect">
-                <select id="selectSubGroup" class="select">
+                <select id="selectSubGroup" class="select" required>
                     <option value="Option 1">Option 1</option>
                     <option value="Option 2">Option 2</option>
                     <option value="Option 3">Option 3</option>
@@ -38,7 +38,7 @@
                 </select>
             </div>
             شهر<div class="city formElement divSelect">
-                <select id="selectCity" class="select">
+                <select id="selectCity" class="select" required>
                     <option value="Option 1">Option 1</option>
                     <option value="Option 2">Option 2</option>
                     <option value="Option 3">Option 3</option>
@@ -47,19 +47,18 @@
                     <option value="Option length">Option that has too long of a value to fit</option>
                 </select>
             </div>
-                وضعیت<div class="condition formElement divSelect">
-                <select id="selectCondition" class="select">
-                    <option value="Option 1">Option 1</option>
-                    <option value="Option 2">Option 2</option>
-                    <option value="Option 3">Option 3</option>
-                    <option value="Option 4">Option 4</option>
-                    <option value="Option 5">Option 5</option>
-                    <option value="Option length">Option that has too long of a value to fit</option>
+            وضعیت<div class="condition formElement divSelect">
+                <select id="selectCondition" class="select" required>
+                    <option value="">وضعیت محصول</option>
+                    <option value="Option 1">نو</option>
+                    <option value="Option 2">در حد نو</option>
+                    <option value="Option 3">کارکرده</option>
+                    <option value="Option 4">کهنه</option>
                 </select>
             </div>
             آپلود عکس<input class="imageUpload formElement" type="file" name="images[]" id="images" multiple>
-            کدملی<input class="advInput formElement" type="text" name="codemeli" id="codemeli" placeholder="کد ملی">
-            قیمت<input  class="advInput formElement" type="number" name="price" id="price" placeholder="قیمت به تومان">
+            کدملی<input class="advInput formElement" type="text" name="codemeli" id="codemeli" placeholder="کد ملی" required>
+            قیمت<input class="advInput formElement" type="number" name="price" id="price" placeholder="قیمت به تومان" required>
             <button class="submitBTN" type="submit">قرار دادن اگهی</button>
         </form>
     </div>

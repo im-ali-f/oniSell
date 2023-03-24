@@ -14,7 +14,6 @@
     --mainElementsLight:#bcb8b8;
     --mainElementGreen:#7CDF7C;
     --mainElementGreenDarker:#6cd56c;
-    --mainElementGreenLighter:#92ec92;
     --errorElement:rgb(225, 165, 165);
     --mainElementGreenlighter:#bbeabb;
     --mainElementGreenlightest:#d1f0d1;
@@ -72,8 +71,18 @@ html {
     font-size: 20px;
     background-color: var(--mainElementGreenlightest);
     border-radius: 10px;
-
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
 }
+.formElement:hover{
+    background-color: var(--mainElementGreenlighter);
+    transition: 0.3s all ease-in-out;
+}
+.formElement:focus{
+    background-color: var(--mainElementGreenlighter);
+    transition: 0.3s all ease-in-out;
+}
+
 .advInput{
     width: 90%;
     height: 4vh;
@@ -95,7 +104,16 @@ html {
     font-size: 15px;
     background-color: var(--mainElementGreenlightest);
     border-radius: 10px;
-
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+}
+.select:hover{
+    background-color: var(--mainElementGreenlighter);
+    transition: 0.3s all ease-in-out;
+}
+.select:focus{
+    background-color: var(--mainElementGreenlighter);
+    transition: 0.3s all ease-in-out;
 }
 .imageUpload{
     background-color: var(--bodyColor);
