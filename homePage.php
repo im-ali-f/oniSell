@@ -18,7 +18,6 @@
             <a href="loginPage.php" class="addAdv">آگهی جدید</a>
             <a href="#" class="aboutUs">درباره ما</a>
             <a href="#" class="support">پشتیبانی</a>
-
         </div>
         <div class="separator"></div>
 

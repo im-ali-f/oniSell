@@ -6,7 +6,7 @@ const house=["یکی از زیر شاخه ها انتخاب کنید",  "لوا�
 const service=["یکی از زیر شاخه ها انتخاب کنید","موتور و ماشین","پذیرایی/مراسم","خدمات رایانه‌ای و موبایل","مالی/حسابداری/بیمه", "حمل و نقل","پیشه و مهارت","آرایشگری و زیبایی","سرگرمی","نظافت","باغبانی و درختکاری", "آموزشی","متفرقه"]
 const personal=["یکی از زیر شاخه ها انتخاب کنید","کیف، کفش و لباس","زیورآلات و اکسسوری","آرایشی، بهداشتی و درمانی","وسایل بچه و اسباب بازی","لوازم التحریر","متفرقه"]
 const entertainment=["یکی از زیر شاخه ها انتخاب کنید","بلیط","تور و چارتر","کتاب و مجله","دوچرخه/اسکیت/اسکوتر","حیوانات","کلکسیون و سرگرمی","آلات موسیقی","ورزش و تناسب اندام","اسباب‌ بازی","متفرقه"]
-const sosial=["یکی از زیر شاخه ها انتخاب کنید","رویداد","داوطلبانه","گم‌شده‌ها"]
+const social=["یکی از زیر شاخه ها انتخاب کنید","رویداد","داوطلبانه","گم‌شده‌ها"]
 const equipment=["یکی از زیر شاخه ها انتخاب کنید","مصالح و تجهیزات ساختمان","ابزارآلات","ماشین‌آلات صنعتی","تجهیزات کسب‌وکار","عمده فروشی"]
 
 const subGroupSection=document.querySelector("#selectSubGroup")
@@ -30,10 +30,10 @@ selectGroup.addEventListener("change",(e)=>{
         });
 
     }
-    else if(selected == "realestate"){
+    else if(selected == "vehicle"){
         subGroupSection.removeAttribute("disabled")
         subGroupSection.innerHTML="";
-        realestate.forEach(element => {
+        vehicle.forEach(element => {
             const newOption=document.createElement("option")
             newOption.innerHTML=`${element}`;
             newOption.value=`${element}`;
@@ -45,10 +45,10 @@ selectGroup.addEventListener("change",(e)=>{
         });
 
     }
-    else if(selected == "realestate"){
+    else if(selected == "digital"){
         subGroupSection.removeAttribute("disabled")
         subGroupSection.innerHTML="";
-        realestate.forEach(element => {
+        digital.forEach(element => {
             const newOption=document.createElement("option")
             newOption.innerHTML=`${element}`;
             newOption.value=`${element}`;
@@ -60,10 +60,10 @@ selectGroup.addEventListener("change",(e)=>{
         });
 
     }
-    else if(selected == "realestate"){
+    else if(selected == "house"){
         subGroupSection.removeAttribute("disabled")
         subGroupSection.innerHTML="";
-        realestate.forEach(element => {
+        house.forEach(element => {
             const newOption=document.createElement("option")
             newOption.innerHTML=`${element}`;
             newOption.value=`${element}`;
@@ -75,10 +75,10 @@ selectGroup.addEventListener("change",(e)=>{
         });
 
     }
-    else if(selected == "realestate"){
+    else if(selected == "service"){
         subGroupSection.removeAttribute("disabled")
         subGroupSection.innerHTML="";
-        realestate.forEach(element => {
+        service.forEach(element => {
             const newOption=document.createElement("option")
             newOption.innerHTML=`${element}`;
             newOption.value=`${element}`;
@@ -90,10 +90,10 @@ selectGroup.addEventListener("change",(e)=>{
         });
 
     }
-    else if(selected == "realestate"){
+    else if(selected == "personal"){
         subGroupSection.removeAttribute("disabled")
         subGroupSection.innerHTML="";
-        realestate.forEach(element => {
+        personal.forEach(element => {
             const newOption=document.createElement("option")
             newOption.innerHTML=`${element}`;
             newOption.value=`${element}`;
@@ -105,10 +105,10 @@ selectGroup.addEventListener("change",(e)=>{
         });
 
     }
-    else if(selected == "realestate"){
+    else if(selected == "entertainment"){
         subGroupSection.removeAttribute("disabled")
         subGroupSection.innerHTML="";
-        realestate.forEach(element => {
+        entertainment.forEach(element => {
             const newOption=document.createElement("option")
             newOption.innerHTML=`${element}`;
             newOption.value=`${element}`;
@@ -120,10 +120,10 @@ selectGroup.addEventListener("change",(e)=>{
         });
 
     }
-    else if(selected == "realestate"){
+    else if(selected == "social"){
         subGroupSection.removeAttribute("disabled")
         subGroupSection.innerHTML="";
-        realestate.forEach(element => {
+        social.forEach(element => {
             const newOption=document.createElement("option")
             newOption.innerHTML=`${element}`;
             newOption.value=`${element}`;
@@ -135,10 +135,10 @@ selectGroup.addEventListener("change",(e)=>{
         });
 
     }
-    else if(selected == "realestate"){
+    else if(selected == "equipment"){
         subGroupSection.removeAttribute("disabled")
         subGroupSection.innerHTML="";
-        realestate.forEach(element => {
+        equipment.forEach(element => {
             const newOption=document.createElement("option")
             newOption.innerHTML=`${element}`;
             newOption.value=`${element}`;
@@ -151,3 +151,52 @@ selectGroup.addEventListener("change",(e)=>{
 
     }
 })
+
+//get and suggest citys
+
+const suggested = document.querySelector("#suggested");
+const searchCity= document.querySelector("#searchCity");
+let hintCitys=[];
+const myDiv=document.createElement("div")
+myDiv.className="suggestedList";
+searchCity.addEventListener("input",(e)=>{
+    let str=e.target.value;
+    if (str.length == 0) {
+        suggested.innerHTML="";
+        myDiv.innerHTML="";
+        suggested.appendChild(myDiv)
+        return;
+    } 
+    else {
+        const xmlhttp = new XMLHttpRequest();
+        xmlhttp.onload = function() {
+            hintCitys=[];
+            suggested.innerHTML="";
+            myDiv.innerHTML="";
+            suggested.appendChild(myDiv)
+            let wholeStr = this.responseText;
+            let array=wholeStr.split("\"")
+            let counter=0;
+            array.forEach(str => {
+                if(counter%2 !=0){
+                    hintCitys.push(str);
+                    
+                }
+                counter+=1;
+            });
+
+            hintCitys.forEach(city => {
+                myDiv.innerHTML+=`<div class="suggestedCity" id="suggested_city_${counter}">${city}</div>`
+            });
+            suggested.innerHTML=""
+            suggested.appendChild(myDiv)
+        };
+        xmlhttp.open("GET", "gethint.php?str=" + str);
+        xmlhttp.send();
+
+    
+    }
+    
+}) ;
+    
+

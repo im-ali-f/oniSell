@@ -12,7 +12,7 @@
 <body>
     <div class="menu"></div>
     <div class="wholePage">
-        <form class="advForm" action="createNewAdvertisement.php" method="post" enctype="multipart/form-data" >
+        <form class="advForm" action="createNewAdvertisement.php" method="post" enctype="multipart/form-data">
             موضوع <input class="advInput formElement" type="text" name="title" id="title" placeholder="موضوع آگهی" required>
             توضیحات محصول<textarea class="advInput formElement" name="text" id="text" cols="30" rows="10" placeholder=" توضیحات محصول و آگهی" required></textarea>
 
@@ -33,20 +33,11 @@
             </div>
             زیر شاخه<div class="subGroup formElement divSelect">
                 <select id="selectSubGroup" class="select" required disabled>
-                    <option value=""></option>
-                    
                 </select>
             </div>
-            شهر<div class="city formElement divSelect">
-                <select id="selectCity" class="select" required>
-                    <option value="Option 1">Option 1</option>
-                    <option value="Option 2">Option 2</option>
-                    <option value="Option 3">Option 3</option>
-                    <option value="Option 4">Option 4</option>
-                    <option value="Option 5">Option 5</option>
-                    <option value="Option length">Option that has too long of a value to fit</option>
-                </select>
-            </div>
+            شهر<input class="city formElement divSelect" type="search" name="searchCity" id="searchCity" placeholder="جست و جوی شهر">
+                <div id="suggested">
+                </div>
             وضعیت<div class="condition formElement divSelect">
                 <select id="selectCondition" class="select" required>
                     <option value="">وضعیت محصول</option>
