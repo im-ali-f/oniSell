@@ -35,8 +35,9 @@
                 <select id="selectSubGroup" class="select" required disabled>
                 </select>
             </div>
-            شهر<input class="city formElement divSelect" type="search" name="searchCity" id="searchCity" placeholder="جست و جوی شهر">
+            شهر<input class="city formElement divSelect" type="search" name="searchCity" id="searchCity" placeholder="جست و جوی شهر" required>
                 <div id="suggested">
+                <div class="suggestedCity" id="suggested_city_${counter}">${city}</div>
                 </div>
             وضعیت<div class="condition formElement divSelect">
                 <select id="selectCondition" class="select" required>
@@ -47,13 +48,33 @@
                     <option value="Option 4">کهنه</option>
                 </select>
             </div>
-            آپلود عکس<input class="imageUpload formElement" type="file" name="images[]" id="images" multiple>
+            <div class="addFileInputSection">
+                <p>آپلود عکس</p>
+                <button id="addNewInput" class="BTN">اضافه کردن عکس</button>
+            </div>
+            
+            <div class="imageUploadSection">
+                <label class="label">
+                <input class="imageUpload" type="file" name="images" id="images_1" required>
+                <span>عکس را انتخاب کنید</span>
+                </label>
+                <input class="imageUpload" type="file" name="images" id="images_1">
+                <input class="imageUpload" type="file" name="images" id="images_1">
+                <input class="imageUpload" type="file" name="images" id="images_1">
+            </div>
+            <button id="resetImageInput" class="BTN">پاک کردن عکس ها</button>
+
             کدملی<input class="advInput formElement" type="text" name="codemeli" id="codemeli" placeholder="کد ملی" required>
             قیمت<input class="advInput formElement" type="number" name="price" id="price" placeholder="قیمت به تومان" required>
-            <button class="submitBTN" type="submit">قرار دادن اگهی</button>
+            <button class="submitBTN BTN" type="submit">قرار دادن اگهی</button>
         </form>
     </div>
+
+
+    <pre id="output"></pre>
+
+
 </body>
-<script src="newAdvPage.js"></script>
+<script type="module" src="newAdvPage.js"></script>
 
 </html>

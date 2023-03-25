@@ -24,13 +24,16 @@
     --mainTextGray:#808080;
     --mainTextGrayDarker:#6a6868;
     --errorText:rgb(191, 50, 50);
+    --mainElementRed:rgb(179, 72, 72);
+    --mainElementRedDarker:rgb(126, 50, 50);
+    --mainElementRedlighter:rgb(204, 119, 119);
     
     --active:#A9A9A9;
     --invisible:rgba(255, 255, 255, 0);
 }
 @font-face {
     font-family: onifont;
-    src: url(/oniSell/fonts/azarShiva.ttf);
+    src: url(fonts/azarShiva.ttf);
 }
 body{
     background-color: var(--bodyColor);
@@ -59,6 +62,8 @@ html {
     font-family: onifont;
     font-size: 20px;
     border: 2px solid var(--mainElements);
+    margin-bottom:5rem ;
+
 }
 .formElement{
     display: block;
@@ -117,4 +122,114 @@ html {
 }
 .imageUpload{
     background-color: var(--bodyColor);
+}
+#suggested{
+    width:80%;
+}
+.suggestedList{
+    width:100%;
+    background-color: var(--mainElementsLighter);
+    max-height: 20rem;
+    margin-top:1rem;
+    direction: rtl;
+    overflow: auto;
+}
+.suggestedCity{
+    height: 3rem;
+    background-color: var(--mainElementsLight);
+    margin-bottom: 0.5rem;
+    color: var(--mainTextGreenLighter);
+    font-family: onifont;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+}
+.suggestedCity:hover{
+    border-radius:10px;
+    transition: all 0.2s ease-in-out;
+    background-color: var(--mainTextGrayDarker);
+}
+.imageUploadSection{
+    margin-top: 2rem;
+    width: 80%;
+    max-height: 20vh;
+    margin-bottom: 2rem;
+    overflow:scroll;
+    overflow-x: hidden;
+    border: 2px solid var(--mainElements);
+    border-radius: 8px;
+}
+/*css for input file */
+label.label input[type="file"] {
+    position: absolute;
+    top: -1000px;
+}
+.label {
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin: 5px;
+    background: #dddddd;
+    display: block;
+}
+.label:hover {
+    background: #5cbd95;
+}
+.label:active {
+    background: #9fa1a0;
+}
+.label:invalid+span {
+    color: #000000;
+}
+.label:valid+span {
+    color: #ffffff;
+}
+.addFileInputSection{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.BTN{
+    padding: 1rem;
+    border-radius: 10px;
+    color: var(--mainTextGreenLighter);
+    font-family: onifont;
+    font-size: 20px;
+    cursor: pointer;
+}
+#addNewInput{
+    background-color: var(--mainElementGreen);
+    transition: 0.2s all ease-in-out;
+}
+#addNewInput:hover{
+    background-color: var(--mainElementGreenDarker);
+    transition: 0.2s all ease-in-out;
+}
+
+#resetImageInput{
+    background-color: var(--mainElementRed);
+    transition: 0.2s all ease-in-out;
+    color: var(--mainElementRedlighter);
+}
+#resetImageInput:hover{
+    background-color: var(--mainElementRedDarker);
+    transition: 0.2s all ease-in-out;
+}
+
+.submitBTN{
+    margin-top: 3rem;
+    
+    transition: 0.2s all ease-in-out;
+    color: var(--mainElementGreen);
+}
+.submitBTN:hover{
+    background-color: limegreen;
+    transition: 0.2s all ease-in-out;
 }

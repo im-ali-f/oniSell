@@ -30,7 +30,14 @@ searchCity.addEventListener("input",(e)=>{
             });
 
             hintCitys.forEach(city => {
-                myDiv.innerHTML+=`<div class="suggestedCity" id="suggested_city_${counter}">${city}</div>`
+                const newCity= document.createElement("div");
+                newCity.id=`city_${city}`;
+                newCity.className="suggestedCity";
+                newCity.innerHTML=`${city}`
+                myDiv.appendChild(newCity);
+                newCity.addEventListener("click",(e)=>{
+                    searchCity.value=e.target.innerHTML;
+                })
             });
             suggested.innerHTML=""
             suggested.appendChild(myDiv)
