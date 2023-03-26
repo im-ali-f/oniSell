@@ -1,3 +1,10 @@
+<?php 
+session_start();
+
+if( !isset($_SESSION["name"])){
+    echo "<script>window.location.href = \"http://onisell.ir/loginPage.php\";</script>";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 

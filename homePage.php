@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    
+    echo $_SESSION['email']."===>".$_SESSION['name'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,9 +20,10 @@
             <img src="/assets/images/logonomy-1679158691376.svg" alt="OniSellLogo">
         </div>
         <div class="menus homePageMargin">
-            <a href="loginPage.php" class="addAdv">آگهی جدید</a>
+            <a href="/loginPage.php" class="addAdv">آگهی جدید</a>
             <a href="#" class="aboutUs">درباره ما</a>
             <a href="#" class="support">پشتیبانی</a>
+
         </div>
         <div class="separator"></div>
 
@@ -29,8 +35,7 @@
             <form action="homePage.php" method="post">
                 <input type="search" name="searchCity" id="searchCity" placeholder="جست و جوی شهر">
             </form>
-            <div id="suggested">
-            </div>
+            <div id="suggested"></div>
         </div>
         <div class="mostViewedCitysSection homePageMargin">
             <p class="mostViewedCitysTxt">شهر های پر بازدید</p>
