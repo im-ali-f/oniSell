@@ -208,3 +208,23 @@ searchCity.addEventListener("input",(e)=>{
 }) ;
 
 
+const imageUploadSection=document.querySelector(".imageUploadSection")
+const addBTN=document.querySelector("#addNewInput")
+addBTN.addEventListener("click",(e)=>{
+    const imageCounter= document.querySelector("#imageCounter")
+    let counter=parseInt(imageCounter.value);
+    counter+=1;
+    const newlabel=document.createElement("label")
+    newlabel.className="label"
+    newlabel.innerHTML=`<input class="imageUpload" type="file" name="image_${counter}" id="images_${counter}" required>
+                        <span>عکس را انتخاب کنید</span>`
+    imageCounter.value=counter;
+    imageUploadSection.appendChild(newlabel)
+})
+
+const resetImageInput=document.querySelector("#resetImageInput")
+resetImageInput.addEventListener("click",(e)=>{
+    imageUploadSection.innerHTML="";
+    const imageCounter= document.querySelector("#imageCounter")
+    imageCounter.value=0;
+})

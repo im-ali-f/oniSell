@@ -36,9 +36,9 @@
                 </select>
             </div>
             شهر<input class="city formElement divSelect" type="search" name="searchCity" id="searchCity" placeholder="جست و جوی شهر" required>
-                <div id="suggested">
+            <div id="suggested">
                 <div class="suggestedCity" id="suggested_city_${counter}">${city}</div>
-                </div>
+            </div>
             وضعیت<div class="condition formElement divSelect">
                 <select id="selectCondition" class="select" required>
                     <option value="">وضعیت محصول</option>
@@ -50,19 +50,18 @@
             </div>
             <div class="addFileInputSection">
                 <p>آپلود عکس</p>
-                <button id="addNewInput" class="BTN">اضافه کردن عکس</button>
+                <div id="addNewInput" class="BTN">اضافه کردن عکس</div>
+                <input type="number" name="imageCounter" id="imageCounter" value="1">
+
             </div>
-            
+
             <div class="imageUploadSection">
                 <label class="label">
-                <input class="imageUpload" type="file" name="images" id="images_1" required>
-                <span>عکس را انتخاب کنید</span>
+                    <input class="imageUpload" type="file" name="images" id="images_1" required>
+                    <span>عکس را انتخاب کنید</span>
                 </label>
-                <input class="imageUpload" type="file" name="images" id="images_1">
-                <input class="imageUpload" type="file" name="images" id="images_1">
-                <input class="imageUpload" type="file" name="images" id="images_1">
             </div>
-            <button id="resetImageInput" class="BTN">پاک کردن عکس ها</button>
+            <div id="resetImageInput" class="BTN">پاک کردن عکس ها</div>
 
             کدملی<input class="advInput formElement" type="text" name="codemeli" id="codemeli" placeholder="کد ملی" required>
             قیمت<input class="advInput formElement" type="number" name="price" id="price" placeholder="قیمت به تومان" required>
