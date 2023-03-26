@@ -25,7 +25,7 @@ if( !isset($_SESSION["name"])){
 
 
             دسته بندی<div class="group formElement divSelect">
-                <select id="selectGroup" class="select" required>
+                <select id="selectGroup" name="selectGroup" class="select" required>
                     <option value="">یکی از شاخه ها را انتخاب کنید</option>
                     <option value="realestate">املاک</option>
                     <option value="vehicle">وسیله نقلیه</option>
@@ -39,7 +39,7 @@ if( !isset($_SESSION["name"])){
                 </select>
             </div>
             زیر شاخه<div class="subGroup formElement divSelect">
-                <select id="selectSubGroup" class="select" required disabled>
+                <select id="selectSubGroup" name="selectSubGroup" class="select" required disabled>
                 </select>
             </div>
             شهر<input class="city formElement divSelect" type="search" name="searchCity" id="searchCity" placeholder="جست و جوی شهر" required>
@@ -47,7 +47,7 @@ if( !isset($_SESSION["name"])){
                 <div class="suggestedCity" id="suggested_city_${counter}">${city}</div>
             </div>
             وضعیت<div class="condition formElement divSelect">
-                <select id="selectCondition" class="select" required>
+                <select id="selectCondition" name="selectCondition" class="select" required>
                     <option value="">وضعیت محصول</option>
                     <option value="Option 1">نو</option>
                     <option value="Option 2">در حد نو</option>
@@ -64,7 +64,7 @@ if( !isset($_SESSION["name"])){
 
             <div class="imageUploadSection">
                 <label class="label">
-                    <input class="imageUpload" type="file" name="images" id="images_1" required>
+                    <input class="imageUpload" type="file" name="images_1" id="images_1" required>
                     <span>عکس را انتخاب کنید</span>
                 </label>
             </div>
