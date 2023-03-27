@@ -64,7 +64,7 @@ if( !isset($_SESSION["name"])){
 
             <div class="imageUploadSection">
                 <label class="label">
-                    <input class="imageUpload" type="file" name="images_1" id="images_1" required>
+                    <input class="imageUpload" type="file" name="image_1" id="images_1" required>
                     <span>عکس را انتخاب کنید</span>
                 </label>
             </div>
