@@ -15,7 +15,6 @@ for ($i = 1; $i <= $imageCounter; $i++) {
     $uploaddir = 'upload/';
     $uploadfile = $uploaddir . "$email" . "_" . basename($_FILES[$inputName]['name']);
     if (move_uploaded_file($_FILES[$inputName]['tmp_name'], $uploadfile)) {
-        echo "File successfully uploaded.";
     } else {
         echo "Error!";
     }
@@ -27,16 +26,19 @@ $accId = $_SESSION["id"];
 
 
 $db = new PDO("mysql:host=www.onisell.ir;dbname=fijmaclt_onisellDataBase", "fijmaclt", "bd83Y7t3rF");
-$queryForAdv = `INSERT INTO adv (title,text,advGroup,advSubGroup,city,advCondition,imageCounter,meliCode,price,accId)
-        VALUES (\"$title\",\"$text\",\"$selectGroup\",\"$selectSubGroup\",\"$searchCity\",\"$selectCondition\",\"$imageCounter\",\"$codemeli\",\"$price\",\"$accId\");`;
-$db->query($queryForAdv);
+$queryForAdv = "
+        INSERT INTO adv (title,text,advGroup,advSubGroup,city,advCondition,imageCounter,meliCode,price,accId)
+        VALUES (\"$title\",\"$text\",\"$selectGroup\",\"$selectSubGroup\",\"$searchCity\",\"$selectCondition\",\"$imageCounter\",\"$codemeli\",\"$price\",\"$accId\");";
+$db->exec($queryForAdv);
 
 $advId = $db->lastInsertId();
 
 foreach ($uploadDirs as $dir) {
-    $queryForImages = `INSERT INTO images (advId,imageDir)
-                VALUES (\"$advId\",\"$$dir\");`;
-    $db->query($queryForImages);            
+    $queryForImages = "
+                    INSERT INTO images (advId,imageDir)
+                    VALUES (\"$advId\",\"$$dir\");";
+    $db->exec($queryForImages);            
 }
 
-
+header("Location: http://onisell.ir/");
+exit();

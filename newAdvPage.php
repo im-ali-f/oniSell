@@ -49,10 +49,10 @@ if( !isset($_SESSION["name"])){
             وضعیت<div class="condition formElement divSelect">
                 <select id="selectCondition" name="selectCondition" class="select" required>
                     <option value="">وضعیت محصول</option>
-                    <option value="Option 1">نو</option>
-                    <option value="Option 2">در حد نو</option>
-                    <option value="Option 3">کارکرده</option>
-                    <option value="Option 4">کهنه</option>
+                    <option value="نو">نو</option>
+                    <option value="در حد نو">در حد نو</option>
+                    <option value="کارکرده">کارکرده</option>
+                    <option value="کهنه">کهنه</option>
                 </select>
             </div>
             <div class="addFileInputSection">
