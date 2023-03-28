@@ -35,16 +35,15 @@ html {
     font-size: 62.5%;
 } 
 .wholePage{
-    background-color: var(--mainElements);
+    background-color: var(--mainElementsLighter);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 65%;
+    width: 98%;
     margin: auto;
-    margin-top: 5vh;
+    margin-top: 1.3vh;
     border-radius: 8px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
-
+    height: 400vh;
 }
 .advPageMargin{
     margin-top: 3.5vh !important;
@@ -56,4 +55,57 @@ html {
     align-items: center;
     padding: 8px;
     box-shadow: 0px 1px 0px rgba(0,0,0,.12);
+}
+
+.menuBar{
+    width: 98%;
+    background-color: var(--mainElementsLight);
+    height: 7vh;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 3rem;
+    position: fixed;
+    right: 1.7vh;
+}
+.menuA{
+    padding: 1rem;
+    color: var(--mainTextGrayDarker);
+    font-family: onifont;
+    font-size: 20px;
+    text-align: center;
+    transition: all ease-in-out 0.2s;
+}
+.menuA:hover{
+    color: var(--mainTextGray);
+    transition: all ease-in-out 0.2s;
+}
+.menuContainer{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+}
+.advBody{
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    height: 400vh;
+    justify-content: space-between;
+    direction: rtl;
+    margin-top: 6vh;
+}
+.optionsSection{
+    width: 20%;
+    background-color: blue;
+    position: fixed;
+    height: 90vh;
+    top: 8vh;
+}
+.advSection{
+    background-color: red;
+    width: 79%;
+    margin-right: 22%;
 }
