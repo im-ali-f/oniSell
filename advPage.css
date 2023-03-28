@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    top: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+:root{
+    --bodyColor:#D3D3D3;
+    --mainElements:#A9A9A9;
+    --mainElementsLighter:#d1cccc;
+    --mainElementsLight:#bcb8b8;
+
+
+    --mainTextGreen:#7CDF7C;
+    --mainTextGreenDarker:#6cd56c;
+    --mainTextGreenLighter:#92ec92;
+    --mainTextGray:#808080;
+    --mainTextGrayDarker:#6a6868;
+
+    
+    --active:#72c372;
+    --invisible:rgba(255, 255, 255, 0);
+}
+@font-face {
+    font-family: onifont;
+    src: url(/oniSell/fonts/azarShiva.ttf);
+}
+body{
+    background-color: var(--bodyColor);
+}  
+html { 
+    font-size: 62.5%;
+} 
+.wholePage{
+    background-color: var(--mainElements);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    margin: auto;
+    margin-top: 5vh;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+
+}
+.advPageMargin{
+    margin-top: 3.5vh !important;
+}
+.separator{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+    box-shadow: 0px 1px 0px rgba(0,0,0,.12);
+}
