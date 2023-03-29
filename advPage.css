@@ -12,6 +12,10 @@
     --mainElements:#A9A9A9;
     --mainElementsLighter:#d1cccc;
     --mainElementsLight:#bcb8b8;
+    --mainElementGreen:#7CDF7C;
+    --mainElementGreenDarker:#6cd56c;
+    --mainElementGreenLighter:#92ec92;
+
 
 
     --mainTextGreen:#7CDF7C;
@@ -19,6 +23,7 @@
     --mainTextGreenLighter:#92ec92;
     --mainTextGray:#808080;
     --mainTextGrayDarker:#6a6868;
+    --mainTextGrayDarkest:#4f4c4c;
 
     
     --active:#72c372;
@@ -38,9 +43,11 @@ html {
     background-color: var(--mainElementsLighter);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 98%;
     margin: auto;
-    margin-top: 1.3vh;
+    margin-top: 7.5vh;
     border-radius: 8px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
@@ -57,7 +64,8 @@ html {
 }
 
 .menuBar{
-    width: 98%;
+    margin: auto;
+    width: 100%;
     background-color: var(--mainElementsLight);
     height: 7vh;
     border-radius: 8px;
@@ -67,7 +75,6 @@ html {
     justify-content: space-between;
     padding-right: 3rem;
     position: fixed;
-    right: 1.7vh;
 }
 .menuA{
     padding: 1rem;
@@ -104,7 +111,6 @@ html {
 .advSection{
     width: 79%;
     margin-right: 22%;
-    border: 5px solid red;
     display: grid;
     grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
     row-gap: 1rem;
@@ -112,7 +118,6 @@ html {
 }
 .adv{
     margin: auto;
-    background-color: #fff;
     width: 49vh;
     max-width: 50vh;
     display: flex;
@@ -122,11 +127,22 @@ html {
     color: var(--mainTextGrayDarker);
     font-family: onifont;
     text-align: center;
+    background-color: var(--mainElementGreenLighter);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.215);
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.adv:hover{
+    box-shadow: 7px 7px 8px 2px rgba(0, 0, 0, 0.247);
+    background-color: var(--mainElementGreen);
+    transition: all 0.2s ease-in-out;
 }
 .advImage{
     width: 20vh;
     height: 20vh;
-    background-color: red;
 }
 .img{
     width: 20vh;
@@ -136,9 +152,9 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     width: 30vh;
     height: 20vh;
-    background-color: orange;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
@@ -146,8 +162,9 @@ html {
     font-size:1.8vh;
 }
 .title{
-    font-size: 2vh;
-    background-color: #fff;
+    text-align: center;
+    color: var(--mainTextGrayDarkest);
+    font-size: 2.3vh;
     width:25vh;
     height: 40%;
     direction: ltr;
