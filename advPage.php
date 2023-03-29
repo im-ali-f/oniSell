@@ -42,20 +42,22 @@
                 
             </div>
             <div class="optionsSection">
-                <div class="priceOption">
-                    (به تومان) قیمت حداقل<input type="number" name="minPrice" id="minPrice">
-                    (به تومان) قیمت حداکثر<input type="number" name="maxPrice" id="maxPrice">
+                <div class="priceOption divSelect optionElement">
+                    (به تومان) قیمت حداقل<input class="priceInput" type="number" name="minPrice" id="minPrice">
+                    (به تومان) قیمت حداکثر<input class="priceInput" type="number" name="maxPrice" id="maxPrice">
                 </div>
-                <div class="seperator"></div>
-               <select id="selectCondition" name="selectCondition" class="select">
-                    <option value="">وضعیت محصول</option>
-                    <option value="نو">نو</option>
-                    <option value="در حد نو">در حد نو</option>
-                    <option value="کارکرده">کارکرده</option>
-                    <option value="کهنه">کهنه</option>
-                </select>
-                <div class="sepertor"></div>
-                دسته بندی<div class="group formElement divSelect">
+                <div class="separator"></div>
+                وضعیت محصول<div class="condition divSelect optionElement">
+                    <select id="selectCondition" name="selectCondition" class="select">
+                            <option value="">وضعیت محصول</option>
+                            <option value="نو">نو</option>
+                            <option value="در حد نو">در حد نو</option>
+                            <option value="کارکرده">کارکرده</option>
+                            <option value="کهنه">کهنه</option>
+                    </select>
+                </div>
+                <div class="separator"></div>
+                دسته بندی<div class="group divSelect optionElement">
                             <select id="selectGroup" name="selectGroup" class="select" required>
                                 <option value="">یکی از شاخه ها را انتخاب کنید</option>
                                 <option value="realestate">املاک</option>
@@ -69,7 +71,9 @@
                                 <option value="equipment">تجهیزات صنعتی</option>
                             </select>
                         </div>
-            زیر شاخه<div class="subGroup formElement divSelect">
+                        <div class="separator"></div>
+
+            زیر شاخه<div class="subGroup divSelect optionElement">
                 <select id="selectSubGroup" name="selectSubGroup" class="select" required disabled>
                 </select>
             </div>

@@ -103,10 +103,16 @@ html {
 }
 .optionsSection{
     width: 20%;
-    background-color: blue;
     position: fixed;
     height: 90vh;
     top: 8vh;
+    color: var(--mainTextGrayDarker);
+    font-family: onifont;
+    font-size: 20px;
+    background-color: var(--mainElementGreenDarker);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 1rem;
 }
 .advSection{
     width: 79%;
@@ -169,4 +175,46 @@ html {
     height: 40%;
     direction: ltr;
     overflow: hidden;
+}
+.optionElement{
+    display: block;
+    color: var(--mainTextGrayDarkest);
+    font-family: onifont;
+    font-size: 20px;
+    text-align: center;
+}
+.priceInput{
+    display: block;
+    background-color: var(--mainElementsLight);
+    width: 95%;
+    margin: auto;
+    height: 5vh;
+    color: var(--mainTextGrayDarker);
+    font-family: onifont;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: all ease-in-out 0.3s;
+}
+.priceInput:hover{
+    transition: all ease-in-out 0.3s;
+    background-color: var(--mainElementsLighter);
+}
+.priceInput:focus{
+    transition: all ease-in-out 0.3s;
+    background-color: var(--mainElementsLighter);
+}
+.divSelect{
+    width: 100%;
+    
+}
+.select{
+    background-color: var(--mainElementGreenLighter);
+    width: 95%;
+    margin: auto;
+    height: 4vh;
+    color: var(--mainTextGrayDarker);
+    font-family: onifont;
+    font-size: 15px;
+    border-radius: 8px;
+    transition: all ease-in-out 0.3s;
 }
