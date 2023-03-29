@@ -160,10 +160,37 @@ let condition=0;
 let group=0;
 let subGroup=0;
 
-
-const httpXML=new XMLHttpRequest();
-httpXML.open("GET", `getAdvertisements.php?city=${city}&minPrice=${minPrice}&maxPrice=${maxPrice}&condition=${condition}&group=${group}&subGroup=${subGroup}`);
-httpXML.send();
-httpXML.onload = function() {
-    // What to do when the response is ready
+function callXml() {
+    const httpXML=new XMLHttpRequest();
+    httpXML.open("GET", `getAdvertisements.php?city=${city}&minPrice=${minPrice}&maxPrice=${maxPrice}&condition=${condition}&group=${group}&subGroup=${subGroup}`);
+    httpXML.send();
+    httpXML.onload = function() {
+        // What to do when the response is ready
+    }
 }
+
+const minPriceInput= document.querySelector("#minPrice")
+minPriceInput.addEventListener("change",(e)=>{
+    minPrice=e.target.value
+    callXml()
+})
+const maxPriceInput= document.querySelector("#maxPrice")
+maxPriceInput.addEventListener("change",(e)=>{
+    maxPrice=e.target.value
+    callXml()
+})
+const selectCondition= document.querySelector("#selectCondition")
+selectCondition.addEventListener("change",(e)=>{
+    condition=e.target.value
+    callXml()
+})
+const selectGroup2 = document.querySelector("#selectGroup")
+selectGroup2.addEventListener("change",(e)=>{
+    group=e.target.value
+    callXml()
+})
+const selectSubGroup= document.querySelector("#selectSubGroup")
+selectSubGroup.addEventListener("change",(e)=>{
+    subGroup=e.target.value
+    callXml()
+})
