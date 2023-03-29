@@ -26,12 +26,12 @@
         
         <div class="advBody">
             <div class="advSection">
-                <div class="adv">
+            <div class="adv">
                     <div class="advImage">
                         <img class="img" src="/oniSell/assets/test.jpg" alt="" srcset="">
                     </div>
                     <div class="advTexts">
-                        <div class="title">تابلو تست عالی ب بله    ودیگه </div>
+                        <div class="title">تابلو تست عالی ب بله ودیگه </div>
                         <div class="description">
                             <div class="condition">نو</div>
                             <div class="price">91  تومان</div>
@@ -39,6 +39,59 @@
                         </div>
                     </div>
                 </div>
+                <div class="adv">
+                    <div class="advImage">
+                        <img class="img" src="/oniSell/assets/test.jpg" alt="" srcset="">
+                    </div>
+                    <div class="advTexts">
+                        <div class="title">تابلو تست عالی ب بله ودیگه </div>
+                        <div class="description">
+                            <div class="condition">نو</div>
+                            <div class="price">91  تومان</div>
+                            <div class="addDate">i d k</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="adv">
+                    <div class="advImage">
+                        <img class="img" src="/oniSell/assets/test.jpg" alt="" srcset="">
+                    </div>
+                    <div class="advTexts">
+                        <div class="title">تابلو تست عالی ب بله ودیگه </div>
+                        <div class="description">
+                            <div class="condition">نو</div>
+                            <div class="price">91  تومان</div>
+                            <div class="addDate">i d k</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="adv">
+                    <div class="advImage">
+                        <img class="img" src="/oniSell/assets/test.jpg" alt="" srcset="">
+                    </div>
+                    <div class="advTexts">
+                        <div class="title">تابلو تست عالی ب بله ودیگه </div>
+                        <div class="description">
+                            <div class="condition">نو</div>
+                            <div class="price">91  تومان</div>
+                            <div class="addDate">i d k</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="adv">
+                    <div class="advImage">
+                        <img class="img" src="/oniSell/assets/test.jpg" alt="" srcset="">
+                    </div>
+                    <div class="advTexts">
+                        <div class="title">تابلو تست عالی ب بله ودیگه </div>
+                        <div class="description">
+                            <div class="condition">نو</div>
+                            <div class="price">91  تومان</div>
+                            <div class="addDate">i d k</div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
             <div class="optionsSection">
 

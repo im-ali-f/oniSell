@@ -105,10 +105,16 @@ html {
     width: 79%;
     margin-right: 22%;
     border: 5px solid red;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+    row-gap: 1rem;
+    align-items: center;
 }
 .adv{
+    margin: auto;
     background-color: #fff;
-    width: 45vh;
+    width: 49vh;
+    max-width: 50vh;
     display: flex;
     direction: ltr;
     justify-content: space-between;
