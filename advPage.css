@@ -80,7 +80,7 @@ html {
     padding: 1rem;
     color: var(--mainTextGrayDarker);
     font-family: onifont;
-    font-size: 20px;
+    font-size: 2.9vh;
     text-align: center;
     transition: all ease-in-out 0.2s;
 }
@@ -108,7 +108,7 @@ html {
     top: 8vh;
     color: var(--mainTextGrayDarker);
     font-family: onifont;
-    font-size: 20px;
+    font-size: 3.5vh;
     background-color: var(--mainElementGreenDarker);
     border-radius: 8px;
     overflow: hidden;
@@ -180,7 +180,7 @@ html {
     display: block;
     color: var(--mainTextGrayDarkest);
     font-family: onifont;
-    font-size: 20px;
+    font-size: 3.5vh;
     text-align: center;
 }
 .priceInput{
@@ -191,9 +191,10 @@ html {
     height: 5vh;
     color: var(--mainTextGrayDarker);
     font-family: onifont;
-    font-size: 20px;
+    font-size: 3vh;
     border-radius: 8px;
     transition: all ease-in-out 0.3s;
+    padding-right: 1rem;
 }
 .priceInput:hover{
     transition: all ease-in-out 0.3s;
@@ -214,7 +215,17 @@ html {
     height: 4vh;
     color: var(--mainTextGrayDarker);
     font-family: onifont;
-    font-size: 15px;
+    font-size: 2.5vh;
     border-radius: 8px;
     transition: all ease-in-out 0.3s;
+    padding-right: 1rem;
+}
+.chosenCity{
+    border-radius: 8px;
+    border: 2px solid var(--mainTextGray);
+    color: var(--mainTextGrayDarkest);
+    font-family: onifont;
+    font-size: 3vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
 }

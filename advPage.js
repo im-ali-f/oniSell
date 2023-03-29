@@ -151,3 +151,19 @@ selectGroup.addEventListener("change",(e)=>{
 
     }
 })
+// get from data base and create adv 
+const cityContainer=document.querySelector(".chosenCity");
+let city=cityContainer.value;
+let minPrice=0;
+let maxPrice=0;
+let condition=0;
+let group=0;
+let subGroup=0;
+
+
+const httpXML=new XMLHttpRequest();
+httpXML.open("GET", `getAdvertisements.php?city=${city}&minPrice=${minPrice}&maxPrice=${maxPrice}&condition=${condition}&group=${group}&subGroup=${subGroup}`);
+httpXML.send();
+httpXML.onload = function() {
+    // What to do when the response is ready
+}
