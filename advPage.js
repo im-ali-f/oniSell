@@ -165,7 +165,8 @@ function callXml() {
     httpXML.open("GET", `getAdvertisements.php?city=${city}&minPrice=${minPrice}&maxPrice=${maxPrice}&condition=${condition}&group=${group}&subGroup=${subGroup}`);
     httpXML.send();
     httpXML.onload = function() {
-        // What to do when the response is ready
+       let xmlTxt=httpXML.responseText;
+       console.log(xmlTxt)
     }
 }
 
