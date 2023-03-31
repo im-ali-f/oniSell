@@ -167,43 +167,40 @@ function callXml() {
     httpXML.onload = function() {
        let xmlTxt=httpXML.responseText;
        console.log(xmlTxt)
-       let resultArrays=JSON.parse(xmlTxt);
-       /*
-       
+       let resultArrays=null;
+       if (xmlTxt !=[] && xmlTxt != ""){
+            resultArrays=JSON.parse(xmlTxt);
+            const advSection=document.querySelector(".advSection")
+            advSection.innerHTML="";
+            resultArrays.forEach(array => {
+            const myDiv=document.createElement("div");
+            myDiv.className="adv";
+            myDiv.id=array["id"]
+            myDiv.innerHTML=`
                     <div class="advImage">
-                        <img class="img" src="/oniSell/assets/test.jpg" alt="" srcset="">
+                    <img class="img" src="/oniSell/assets/test.jpg" alt="" srcset="">
                     </div>
                     <div class="advTexts">
-                        <div class="title">تابلو تست عالی ب بله ودیگه </div>
+                        <div class="title">${array["title"]}</div>
                         <div class="description">
-                            <div class="condition">نو</div>
-                            <div class="price">91 تومان</div>
+                            <div class="condition">${array["condition"]}</div>
+                            <div class="price">${array["price"]}</div>
                             <div class="addDate">i d k</div>
                         </div>
                     </div>
-                
-       
-       */
-        const advSection=document.querySelector(".advSection")
-        resultArrays.forEach(array => {
-        const myDiv=document.createElement("div");
-        myDiv.className="adv";
-        myDiv.value=array["id"]
-        myDiv.innerHTML=`
-                <div class="advImage">
-                <img class="img" src="/oniSell/assets/test.jpg" alt="" srcset="">
-                </div>
-                <div class="advTexts">
-                    <div class="title">${array["title"]}</div>
-                    <div class="description">
-                        <div class="condition">${array["condition"]}</div>
-                        <div class="price">${array["price"]}</div>
-                        <div class="addDate">i d k</div>
-                    </div>
-                </div>
-        `
-        advSection.appendChild(myDiv)
-       });
+            `
+            advSection.appendChild(myDiv)
+            });
+        }
+        else{
+            const advSection=document.querySelector(".advSection")
+            advSection.innerHTML="";
+            const myDiv=document.createElement("div");
+            myDiv.className="error";
+            myDiv.innerHTML="با محدودیت های اعمال شده آگهی پیدا نشد"
+            advSection.appendChild(myDiv)
+           
+        }
     }
 }
 

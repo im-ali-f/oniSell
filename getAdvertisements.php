@@ -39,14 +39,23 @@ elseif($minPrice==0 && $maxPrice !=0){
 $lastResult=[];
 $result=$db->query($wholeQuery);
 $result=$result->fetchAll();
-foreach ($result as $row) {
+if($result != "" || $result !=[]){
+    foreach ($result as $row) {
     $lastResult["id"]=$row["id"];
     $lastResult["title"]=$row["title"];
     $lastResult["condition"]=$row["advCondition"];
     $lastResult["price"]=$row["price"];
     $lastResultToSend[]=$lastResult;
 }
+}
 
+if(isset($lastResultToSend)){
     $resultToSendJSON=json_encode($lastResultToSend);
     echo $resultToSendJSON;
+}
+else{
+    $resultToSendJSON="";
+    echo $resultToSendJSON;
+
+}
 
