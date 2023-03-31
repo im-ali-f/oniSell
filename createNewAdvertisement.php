@@ -36,7 +36,7 @@ $advId = $db->lastInsertId();
 foreach ($uploadDirs as $dir) {
     $queryForImages = "
                     INSERT INTO images (advId,imageDir)
-                    VALUES (\"$advId\",\"$$dir\");";
+                    VALUES (\"$advId\",\"$dir\");";
     $db->exec($queryForImages);            
 }
 

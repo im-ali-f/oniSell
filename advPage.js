@@ -170,15 +170,19 @@ function callXml() {
        let resultArrays=null;
        if (xmlTxt !=[] && xmlTxt != ""){
             resultArrays=JSON.parse(xmlTxt);
+            
             const advSection=document.querySelector(".advSection")
             advSection.innerHTML="";
+
+
             resultArrays.forEach(array => {
+           
             const myDiv=document.createElement("div");
             myDiv.className="adv";
             myDiv.id=array["id"]
             myDiv.innerHTML=`
                     <div class="advImage">
-                    <img class="img" src="/oniSell/assets/test.jpg" alt="" srcset="">
+                    <img class="img" src="${array["imgDir"]}" alt="image of and Adv" >
                     </div>
                     <div class="advTexts">
                         <div class="title">${array["title"]}</div>

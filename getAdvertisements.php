@@ -44,10 +44,9 @@ if($result != "" || $result !=[]){
     foreach ($result as $row) {
         $id=$row["id"];
         $queryGetImg="SELECT * FROM `images` WHERE `advId` = $id";
-        $resultImg=$db->query($wholeQuery);
+        $resultImg=$db->query($queryGetImg);
         $resultImg=$resultImg->fetch();
-
-
+        
         $lastResult["id"]=$row["id"];
         $lastResult["title"]=$row["title"];
         $lastResult["condition"]=$row["advCondition"];
