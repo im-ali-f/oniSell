@@ -39,14 +39,22 @@ elseif($minPrice==0 && $maxPrice !=0){
 $lastResult=[];
 $result=$db->query($wholeQuery);
 $result=$result->fetchAll();
+
 if($result != "" || $result !=[]){
     foreach ($result as $row) {
-    $lastResult["id"]=$row["id"];
-    $lastResult["title"]=$row["title"];
-    $lastResult["condition"]=$row["advCondition"];
-    $lastResult["price"]=$row["price"];
-    $lastResultToSend[]=$lastResult;
-}
+        $id=$row["id"];
+        $queryGetImg="SELECT * FROM `images` WHERE `advId` = $id";
+        $resultImg=$db->query($wholeQuery);
+        $resultImg=$resultImg->fetch();
+
+
+        $lastResult["id"]=$row["id"];
+        $lastResult["title"]=$row["title"];
+        $lastResult["condition"]=$row["advCondition"];
+        $lastResult["price"]=$row["price"];
+        $lastResult["imgDir"]=$resultImg["imageDir"];
+        $lastResultToSend[]=$lastResult;
+    }
 }
 
 if(isset($lastResultToSend)){
