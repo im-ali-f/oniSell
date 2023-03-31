@@ -23,7 +23,7 @@ selectGroup.addEventListener("change",(e)=>{
             newOption.innerHTML=`${element}`;
             newOption.value=`${element}`;
             if(counter==0){
-                newOption.value="";
+                newOption.value="0";
             }
             subGroupSection.appendChild(newOption);
             counter+=1;
@@ -167,6 +167,10 @@ function callXml() {
     httpXML.onload = function() {
        let xmlTxt=httpXML.responseText;
        console.log(xmlTxt)
+       let resultArrays=JSON.parse(xmlTxt);
+       resultArrays.forEach(array => {
+        console.log(array["id"])
+       });
     }
 }
 

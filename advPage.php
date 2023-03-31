@@ -58,7 +58,7 @@ $city = $_SESSION["city"];
                 <div class="separator"></div>
                 وضعیت محصول<div class="condition divSelect optionElement">
                     <select id="selectCondition" name="selectCondition" class="select">
-                        <option value="">وضعیت محصول</option>
+                        <option value="0">وضعیت محصول</option>
                         <option value="نو">نو</option>
                         <option value="در حد نو">در حد نو</option>
                         <option value="کارکرده">کارکرده</option>
@@ -68,7 +68,7 @@ $city = $_SESSION["city"];
                 <div class="separator"></div>
                 دسته بندی<div class="group divSelect optionElement">
                     <select id="selectGroup" name="selectGroup" class="select" required>
-                        <option value="">یکی از شاخه ها را انتخاب کنید</option>
+                        <option value="0">یکی از شاخه ها را انتخاب کنید</option>
                         <option value="realestate">املاک</option>
                         <option value="vehicle">وسیله نقلیه</option>
                         <option value="digital">لوازم دیجیتال</option>
