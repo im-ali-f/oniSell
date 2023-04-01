@@ -49,20 +49,26 @@ searchCity.addEventListener("input",(e)=>{
     }
     
 }) ;
-    
+
 const searchBTN= document.querySelector("#searchBTN")
 searchBTN.addEventListener("click",(e)=>{
+    let checkCity=false;
     const searchInput=document.querySelector("#searchCity")
     let city=searchInput.value;
-    const xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET", "cityExistence.php?city=" + city);
-    xmlhttp.send();
-    let cityExistence="";
-    xmlhttp.onload = function() {
-        cityExistence = xmlhttp.responseText;
+    const xmlhttp2 = new XMLHttpRequest();
+    xmlhttp2.onload = function() {
+        let cityExistence = this.responseText;
+        console.log(city)
+        console.log(cityExistence)
+        if(cityExistence == "true"){
+            checkCity=true;
+        }
+
+
         
     }
-    console.log(city)
-    console.log(cityExistence)
+    xmlhttp2.open("GET", "cityExistence.php?city=" + city);
+    xmlhttp2.send();
+    
 
 })

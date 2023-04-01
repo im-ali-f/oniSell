@@ -8,4 +8,10 @@ try {
 $city = $_REQUEST["city"];
 $query="SELECT * FROM `cities` WHERE `name` = '$city'";
 $result=$db->query($query);
-echo($result);
+$result=$result->fetchAll();
+if($result != [] && $result != ""){
+    echo "true";
+}
+else{
+    echo "false";
+}
