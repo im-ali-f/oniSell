@@ -32,11 +32,11 @@
                 <br> اﮔﻪ دﻧﺒﺎل ﭼﯿﺰی ﻫﺴﺘﯽ، ﺷﻬﺮت رو اﻧﺘﺨﺎب ﮐﻦ و ﺗﻮ دﺳﺘﻪ‌ﺑﻨﺪی‌ﻫﺎ ﺑﻪ دﻧﺒﺎﻟﺶ ﺑﮕﺮد. اﮔﺮ ﻫﻢ ﻣﯽ‌ﺧﻮای ﭼﯿﺰی ﺑﻔﺮوﺷﯽ، ﭼﻨﺪ ﺗﺎ ﻋﮑﺲ ﺧﻮب ازش ﺑﮕﯿﺮ و آگهی بزار
         </div>
         <div class="searchSection homePageMargin">
-            <form action="homePage.php" method="post">
                 <input type="search" name="searchCity" id="searchCity" placeholder="جست و جوی شهر">
-            </form>
+                
             <div id="suggested"></div>
         </div>
+        <button class="BTN" id="searchBTN">جست و جو شهر</button>
         <div class="mostViewedCitysSection homePageMargin">
             <p class="mostViewedCitysTxt">شهر های پر بازدید</p>
             <div class="mostViewedcitys"></div>

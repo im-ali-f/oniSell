@@ -146,3 +146,19 @@ html {
     transition: all 0.2s ease-in-out;
     background-color: var(--mainTextGrayDarker);
 }
+.BTN{
+    width: 50%;
+    padding: 1rem;
+    border-radius: 10px;
+    color: var(--mainTextGreenLighter);
+    font-family: onifont;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+    margin: auto;
+}
+.BTN:hover{
+    background-color: var(--mainTextGreen);
+    color: var(--mainTextGrayDarker);
+    transition: 0.2s all ease-in-out;
+}

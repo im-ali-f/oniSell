@@ -50,4 +50,19 @@ searchCity.addEventListener("input",(e)=>{
     
 }) ;
     
+const searchBTN= document.querySelector("#searchBTN")
+searchBTN.addEventListener("click",(e)=>{
+    const searchInput=document.querySelector("#searchCity")
+    let city=searchInput.value;
+    const xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("GET", "cityExistence.php?city=" + city);
+    xmlhttp.send();
+    let cityExistence="";
+    xmlhttp.onload = function() {
+        cityExistence = xmlhttp.responseText;
+        
+    }
+    console.log(city)
+    console.log(cityExistence)
 
+})

@@ -188,8 +188,7 @@ function callXml() {
                         <div class="title">${array["title"]}</div>
                         <div class="description">
                             <div class="condition">${array["condition"]}</div>
-                            <div class="price">${array["price"]}</div>
-                            <div class="addDate">i d k</div>
+                            <div class="price">قیمت : ${array["price"] } تومان</div>
                         </div>
                     </div>
             `
@@ -231,5 +230,8 @@ selectGroup2.addEventListener("change",(e)=>{
 const selectSubGroup= document.querySelector("#selectSubGroup")
 selectSubGroup.addEventListener("change",(e)=>{
     subGroup=e.target.value
+    callXml()
+})
+document.addEventListener("DOMContentLoaded",(e)=>{
     callXml()
 })
