@@ -1,6 +1,6 @@
 <?php
 session_start();
-$city = $_SESSION["city"];
+$city = $_REQUEST["city"];
 ?>
 <!DOCTYPE html>
 <html lang="en">

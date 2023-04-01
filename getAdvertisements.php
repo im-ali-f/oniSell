@@ -11,7 +11,7 @@ $group=$_REQUEST["group"];
 $subGroup=$_REQUEST["subGroup"];
 
 $db = new PDO("mysql:host=www.onisell.ir;dbname=fijmaclt_onisellDataBase", "fijmaclt", "bd83Y7t3rF");
-$wholeQuery="SELECT * FROM `adv` WHERE `city` = 'تهران' ";
+$wholeQuery="SELECT * FROM `adv` WHERE `city` = '$city' ";
 if($condition !=0){
     $conditionQuery="AND `advCondition` = '$condition'";
     $wholeQuery.=$conditionQuery;

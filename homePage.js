@@ -58,17 +58,26 @@ searchBTN.addEventListener("click",(e)=>{
     const xmlhttp2 = new XMLHttpRequest();
     xmlhttp2.onload = function() {
         let cityExistence = this.responseText;
-        console.log(city)
-        console.log(cityExistence)
         if(cityExistence == "true"){
             checkCity=true;
         }
-
-
+        
+        if(checkCity){
+            console.log("redirect")
+            window.location.replace("advPage.php?city="+city);
+        }
+        else{
+            const errorCity=document.querySelector(".error")
+            errorCity.classList.remove("invisible");
+            console.log("error")
+            console.log(city)
+        }
+    
         
     }
     xmlhttp2.open("GET", "cityExistence.php?city=" + city);
     xmlhttp2.send();
+
     
 
 })
