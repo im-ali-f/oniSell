@@ -29,7 +29,7 @@
 }
 @font-face {
     font-family: onifont;
-    src: url(/oniSell/fonts/azarShiva.ttf);
+    src: url(fonts/azarShiva.ttf);
 }
 body{
     background-color: var(--bodyColor);

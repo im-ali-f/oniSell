@@ -1,7 +1,18 @@
 <?php
 session_start();
 $city = $_REQUEST["city"];
+
+$db = new PDO("mysql:host=www.onisell.ir;dbname=fijmaclt_citys", "fijmaclt", "bd83Y7t3rF");
+$queryGetView="SELECT * FROM `cities` WHERE `name` = '$city'";
+$resultView=$db->query($queryGetView);
+$resultArray=$resultView->fetch();
+$newView=intval($resultArray["view"])+1;
+$query="UPDATE cities
+        SET view = $newView
+        WHERE name = '$city';";
+$db->exec($query);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
