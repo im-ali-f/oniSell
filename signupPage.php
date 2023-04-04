@@ -38,26 +38,29 @@
 
                         $resultEmail = $db->query($queryEmail);
                         $rowsEmail = $resultEmail->fetch();
-
-                        if ($pass == $pass2) {
-                            if (!$rowsName) {
-                                if (!$rowsEmail) {
-                                    $queryCreateNewAcc = "
+                        if (strlen($pass) >= 8) {
+                            if ($pass == $pass2) {
+                                if (!$rowsName) {
+                                    if (!$rowsEmail) {
+                                        $queryCreateNewAcc = "
                             INSERT INTO acc (name, pass, email)
                             VALUES (\"$name\",\"$pass\",\"$email\");";
-                                    $db->exec($queryCreateNewAcc);
-                                    echo "<div class=\"error\"> ثبت نام کامل شد لطفا به حساب خود وارد شوید</div>";
-                                    echo "<a href=\"loginPage.php\"><button class=\"BTN redirectBTN\" id=\"redirectToLogin\">صفحه ورود</button></a>";
-                                    exit();
+                                        $db->exec($queryCreateNewAcc);
+                                        echo "<div class=\"error\"> ثبت نام کامل شد لطفا به حساب خود وارد شوید</div>";
+                                        echo "<a href=\"loginPage.php\"><button class=\"BTN redirectBTN\" id=\"redirectToLogin\">صفحه ورود</button></a>";
+                                        exit();
+                                    } else {
+                                        echo "<div class=\"error\"> کاربری با همین ایمیل قبلا ثبت نام کرده است</div>";
+                                    }
                                 } else {
-                                    echo "<div class=\"error\"> کاربری با همین ایمیل قبلا ثبت نام کرده است</div>";
+                                    echo "<div class=\"error\"> کاربری با همین نام قبلا ثبت نام کرده است</div>";
                                 }
                             } else {
-                                echo "<div class=\"error\"> کاربری با همین نام قبلا ثبت نام کرده است</div>";
+                                echo "<div class=\"error\">پسورد و تکرار پسوورد یکسان نیست  </div>";
                             }
                         } 
                         else {
-                            echo "<div class=\"error\">پسورد و تکرار پسوورد یکسان نیست  </div>";
+                            echo "<div class=\"error\">پسورد وارد شده باید 8 کاراکتر یا بیشتر باشد</div>";
                         }
                     }
 

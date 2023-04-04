@@ -230,8 +230,8 @@ html {
     padding-right: 3vh;
 }
 .logo img{
-    width: 100%;
-    height: 100%;
+    width: 6.5vh;
+    height: 6.5vh;
 }
 .error{
     background-color: var(--mainTextGrayDarkest);

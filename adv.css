@@ -37,3 +37,58 @@ body{
 html { 
     font-size: 62.5%;
 } 
+.wholePage{
+    background-color: var(--mainElementsLighter);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    margin: auto;
+    margin-top: 7.5vh;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+.advPageMargin{
+    margin-top: 3.5vh !important;
+}
+.separator{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+    box-shadow: 0px 1px 0px rgba(0,0,0,.12);
+}
+
+.menuBar{
+    margin: auto;
+    width: 100%;
+    background-color: var(--mainElementsLight);
+    height: 7vh;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 3rem;
+    position: fixed;
+}
+.menuA{
+    padding: 1rem;
+    color: var(--mainTextGrayDarker);
+    font-family: onifont;
+    font-size: 2.9vh;
+    text-align: center;
+    transition: all ease-in-out 0.2s;
+}
+.menuA:hover{
+    color: var(--mainTextGray);
+    transition: all ease-in-out 0.2s;
+}
+.menuContainer{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+}
