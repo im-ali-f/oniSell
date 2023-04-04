@@ -58,6 +58,7 @@
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
+                <a href="#" class="report">ثبت تخلف یا مشکل در آگهی</a>
             </div>
 
 

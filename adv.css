@@ -21,6 +21,7 @@
     --mainTextGreen:#7CDF7C;
     --mainTextGreenDarker:#6cd56c;
     --mainTextGreenLighter:#92ec92;
+    --mainTextGrayLight:#979393;
     --mainTextGray:#808080;
     --mainTextGrayDarker:#6a6868;
     --errorText:rgb(191, 50, 50);
@@ -100,6 +101,7 @@ html {
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
+    margin-bottom: 5rem;
 
 }
 .left{
@@ -244,4 +246,18 @@ html {
     font-size: 3vh;
     color: var(--mainTextGreen);
     font-family: onifont;
+}
+.report{
+    font-size: 3vh;
+    color: var(--mainTextGrayLight);
+    font-family: onifont;
+    cursor: pointer;
+    text-align: center;
+    margin: auto;
+    display: block;
+    transition: all 0.2s ease-in-out;
+}
+.report:hover{
+    transition: all 0.2s ease-in-out;
+    color: var(--errorText);
 }
