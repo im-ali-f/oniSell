@@ -35,21 +35,15 @@
 
                     <!-- Full-width images with number and caption text -->
                     <div class="mySlides fade">
-                        <div class="numbertext">1 / 3</div>
-                        <div class="divInnerImage"><img src="assets/gray_logo.svg"class="innerImage"></div>
-                        <div class="text">Caption Text</div>
+                        <div class="divInnerImage"><img src="assets/peakpx.jpg" class="innerImage"></div>
                     </div>
 
                     <div class="mySlides fade">
-                        <div class="numbertext">2 / 3</div>
-                        <div class="divInnerImage"><img src="assets/gray_logo.svg"class="innerImage"></div>
-                        <div class="text">Caption Two</div>
+                        <div class="divInnerImage"><img src="assets/wp8440836-anime-red-and-black-wallpapers.png" class="innerImage"></div>
                     </div>
 
                     <div class="mySlides fade">
-                        <div class="numbertext">3 / 3</div>
-                        <div class="divInnerImage"><img src="assets/gray_logo.svg"class="innerImage"></div>
-                        <div class="text">Caption Three</div>
+                        <div class="divInnerImage"><img src="assets/wp9142818-red-and-black-4k-pc-wallpapers.jpg" class="innerImage"></div>
                     </div>
 
                     <!-- Next and previous buttons -->
@@ -65,9 +59,41 @@
                     <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
             </div>
-            <div class="right">RRRRR</div>
+
+
+            <div class="right">
+                <p class="infoP"></p>
+                <div class="adv">
+                    <div class="title divAdv">یه چیز خوب نتیامصبامنصبامنبمن تصلتمص بامنصبانب و خفن</div>
+                    <div class="separator"></div>
+
+                    <div class="groupSection ">
+                        <p class="infoP">گروه:</p>
+                        <div class="group divAdv">خونگی</div>
+                        <p class="infoP">زیرگروه:</p>
+                        <div class="subGroup divAdv">مبلمان</div>
+                    </div>
+                    <div class="separator"></div>
+
+                    <p class="infoP">توضیحات محصول:</p>
+                    <div class="textAdv divAdv">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatibus ea rem dolores corrupti quod cupiditate magnam cum sapiente provident veniam error animi vero, obcaecati dolorem reiciendis praesentium quisquam nihil suscipit pariatur voluptas libero ratione. Voluptatum beatae inventore optio nostrum placeat in et nobis eaque. Totam, eveniet nostrum. Delectus repellat temporibus corrupti veritatis eligendi similique laudantium exercitationem nostrum, mollitia nobis incidunt suscipit aperiam doloremque eum vitae, porro quos velit? Beatae nobis ab modi debitis dicta animi reprehenderit nostrum voluptatum quaerat odio enim, odit, nisi nam! Quae esse deserunt eaque commodi error minus maxime ex harum molestiae consequuntur architecto, officia expedita?
+                    </div>
+                    <div class="personalInfo">
+                        <div class="separator"></div>
+
+                        <p class="infoP">ایمیل آگهی کننده:</p>
+                        <div class="email divAdv">aliFarhad.asus@gmail.com</div>
+                    </div>
+                    <div class="separator"></div>
+
+                    <p class="infoP">قیمت:</p>
+                    <div class="price divAdv">100000تومان</div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
 <script src="adv.js"></script>
+
 </html>

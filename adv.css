@@ -11,6 +11,7 @@
     --bodyColor:#D3D3D3;
     --mainElements:#A9A9A9;
     --mainElementsLighter:#d1cccc;
+    --mainElementsLightest:#eeeaea;
     --mainElementsLight:#bcb8b8;
     --mainElementGreen:#7CDF7C;
     --mainElementGreenDarker:#6cd56c;
@@ -33,6 +34,7 @@
 }
 body{
     background-color: var(--bodyColor);
+    overflow-x: hidden;
 }  
 html { 
     font-size: 62.5%;
@@ -45,7 +47,7 @@ html {
     align-items: center;
     width: 98%;
     margin: auto;
-    margin-top: 7.5vh;
+    margin-top: 9.5vh;
     border-radius: 8px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
@@ -62,6 +64,7 @@ html {
 }
 
 .menuBar{
+    z-index: +5;
     margin: auto;
     width: 100%;
     background-color: var(--mainElementsLight);
@@ -106,9 +109,10 @@ html {
     padding: 3rem;
 }
 .right{
-    background-color: green;
     width: 40%;
     padding: 3rem;
+    border-radius: 8px;
+    background-color: var(--mainElementsLightest);
     border-radius: 8px;
 }
 
@@ -200,13 +204,44 @@ html {
     to {opacity: 1}
 }
 .innerImage{
-    width:50vh;
-    height:50vh;
-    
+    width:30vw;
+    height:30vw;
+    border-radius: 8px;
+    overflow: hidden;
 }
 .divInnerImage{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.divAdv{
+    color: var(--mainTextGray);
+    font-family: onifont;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 2vh;
+}
+.adv{
+    width: 100%;
+    direction: rtl;   
+    
+}
+.title{
+    font-size: 3vh;
+}
+.price{
+    font-size: 3vh;
+}
+.infoP{
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 3vh;
+    color: var(--mainTextGreen);
+    font-family: onifont;
 }
