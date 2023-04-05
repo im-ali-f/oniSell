@@ -1,3 +1,6 @@
+<?php
+$id = $_REQUEST["id"];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +24,7 @@
             </div>
             <div class="searchAdv">ddd</div>
             <?php
-            //echo "<div class=\"chosenCity\" value=\"$city\">$city</div>";
+            echo "<div class=\"idDiv\" value=\"$id\">$id</div>";
             ?>
             <div link="#" class="logo">
                 <img src="/assets/images/logonomy-1679158691376.svg" alt="OniSellLogo">

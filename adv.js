@@ -26,3 +26,20 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+
+
+const idDiv =document.querySelector("idDiv");
+const id=idDiv.innerHTML;
+
+const httpXML=new XMLHttpRequest();
+httpXML.open("GET", `getSpeceficAdv.php?id=${id}`);
+httpXML.send();
+httpXML.onload = function() {
+    let xmlJSON=httpXML.responseText;
+    console.log(xmlJSON)
+    if (xmlJSON !=[] && xmlJSON != ""){
+      resultArrays=JSON.parse(xmlJSON);
+    }
+    
+}
