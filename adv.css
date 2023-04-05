@@ -261,3 +261,10 @@ html {
     transition: all 0.2s ease-in-out;
     color: var(--errorText);
 }
+.idDiv{
+    display: none;
+}
+.logo img{
+    width: 6.5vh;
+    height: 6.5vh;
+}

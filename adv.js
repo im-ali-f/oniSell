@@ -29,11 +29,11 @@ function showSlides(n) {
 
 
 
-const idDiv =document.querySelector("idDiv");
+const idDiv =document.querySelector(".idDiv");
 const id=idDiv.innerHTML;
 
 const httpXML=new XMLHttpRequest();
-httpXML.open("GET", `getSpeceficAdv.php?id=${id}`);
+httpXML.open("GET", `getSpecificAdv.php?id=${id}`);
 httpXML.send();
 httpXML.onload = function() {
     let xmlJSON=httpXML.responseText;
@@ -41,5 +41,5 @@ httpXML.onload = function() {
     if (xmlJSON !=[] && xmlJSON != ""){
       resultArrays=JSON.parse(xmlJSON);
     }
-    
+    console.log(resultArrays)
 }
