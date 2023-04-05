@@ -14,7 +14,7 @@ $result=$db->query($query);
 $result=$result->fetch();
 
 if(isset($result)){
-    $resultToSendJSON=json_encode($$result);
+    $resultToSendJSON=json_encode($result);
     echo $resultToSendJSON;
 }
 else{

@@ -42,4 +42,40 @@ httpXML.onload = function() {
       resultArrays=JSON.parse(xmlJSON);
     }
     console.log(resultArrays)
+
+
+    /* 
+                   
+    */
+   const advDiv=document.createElement("div")
+   advDiv.className="adv";
+   advDiv.innerHTML=`
+      <div class="title divAdv">${resultArrays["title"]}</div>
+      <div class="separator"></div>
+
+      <div class="groupSection ">
+          <p class="infoP">گروه:</p>
+          <div class="group divAdv">${resultArrays["advGroup"]}</div>
+          <p class="infoP">زیرگروه:</p>
+          <div class="subGroup divAdv">${resultArrays["advSubGroup"]}</div>
+      </div>
+      <div class="separator"></div>
+
+      <p class="infoP">توضیحات محصول:</p>
+      <div class="textAdv divAdv">
+      ${resultArrays["text"]}
+      </div>
+      <div class="personalInfo">
+          <div class="separator"></div>
+
+          <p class="infoP">ایمیل آگهی کننده:</p>
+          <div class="email divAdv"></div>
+      </div>
+      <div class="separator"></div>
+
+      <p class="infoP">قیمت:</p>
+      <div class="price divAdv">${resultArrays["price"]} تومان</div>
+   `
+   const right=document.querySelector(".right")
+   right.appendChild(advDiv);
 }

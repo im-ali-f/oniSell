@@ -37,6 +37,7 @@ $id = $_REQUEST["id"];
                 <div class="slideshow-container">
 
                     <!-- Full-width images with number and caption text -->
+                    <!--
                     <div class="mySlides fade">
                         <div class="divInnerImage"><img src="assets/peakpx.jpg" class="innerImage"></div>
                     </div>
@@ -48,52 +49,29 @@ $id = $_REQUEST["id"];
                     <div class="mySlides fade">
                         <div class="divInnerImage"><img src="assets/wp9142818-red-and-black-4k-pc-wallpapers.jpg" class="innerImage"></div>
                     </div>
-
+                    -->
                     <!-- Next and previous buttons -->
+                    <!--
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    -->
                 </div>
                 <br>
 
                 <!-- The dots/circles -->
-                <div style="text-align:center">
+                <div style="text-align:center" id="dotSection">
+                <!--
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
+                -->
                 </div>
                 <a href="#" class="report">ثبت تخلف یا مشکل در آگهی</a>
             </div>
 
 
             <div class="right">
-                <p class="infoP"></p>
-                <div class="adv">
-                    <div class="title divAdv">یه چیز خوب نتیامصبامنصبامنبمن تصلتمص بامنصبانب و خفن</div>
-                    <div class="separator"></div>
-
-                    <div class="groupSection ">
-                        <p class="infoP">گروه:</p>
-                        <div class="group divAdv">خونگی</div>
-                        <p class="infoP">زیرگروه:</p>
-                        <div class="subGroup divAdv">مبلمان</div>
-                    </div>
-                    <div class="separator"></div>
-
-                    <p class="infoP">توضیحات محصول:</p>
-                    <div class="textAdv divAdv">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatibus ea rem dolores corrupti quod cupiditate magnam cum sapiente provident veniam error animi vero, obcaecati dolorem reiciendis praesentium quisquam nihil suscipit pariatur voluptas libero ratione. Voluptatum beatae inventore optio nostrum placeat in et nobis eaque. Totam, eveniet nostrum. Delectus repellat temporibus corrupti veritatis eligendi similique laudantium exercitationem nostrum, mollitia nobis incidunt suscipit aperiam doloremque eum vitae, porro quos velit? Beatae nobis ab modi debitis dicta animi reprehenderit nostrum voluptatum quaerat odio enim, odit, nisi nam! Quae esse deserunt eaque commodi error minus maxime ex harum molestiae consequuntur architecto, officia expedita?
-                    </div>
-                    <div class="personalInfo">
-                        <div class="separator"></div>
-
-                        <p class="infoP">ایمیل آگهی کننده:</p>
-                        <div class="email divAdv">aliFarhad.asus@gmail.com</div>
-                    </div>
-                    <div class="separator"></div>
-
-                    <p class="infoP">قیمت:</p>
-                    <div class="price divAdv">100000تومان</div>
-                </div>
+               
             </div>
         </div>
     </div>
