@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    top: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+:root{
+    --bodyColor:#D3D3D3;
+    --mainElements:#A9A9A9;
+    --mainElementsLighter:#d1cccc;
+    --mainElementsLightest:#eeeaea;
+    --mainElementsLight:#bcb8b8;
+    --mainElementGreen:#7CDF7C;
+    --mainElementGreenDarker:#6cd56c;
+    --mainElementGreenLighter:#92ec92;
+    --errorElement:rgb(225, 165, 165);
+
+    --mainTextGreen:#7CDF7C;
+    --mainTextGreenDarker:#6cd56c;
+    --mainTextGreenLighter:#92ec92;
+    --mainTextGrayLight:#979393;
+    --mainTextGray:#808080;
+    --mainTextGrayDarker:#6a6868;
+    --errorText:rgb(191, 50, 50);
+    
+    --active:#A9A9A9;
+    --invisible:rgba(255, 255, 255, 0);
+}
+@font-face {
+    font-family: onifont;
+    src: url(fonts/azarShiva.ttf);
+}
+body{
+    background-color: var(--bodyColor);
+    overflow-x: hidden;
+}  
+html { 
+    font-size: 62.5%;
+} 
+.wholePage{
+    background-color: var(--mainElementsLighter);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    margin: auto;
+    margin-top: 9.5vh;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+.advPageMargin{
+    margin-top: 3.5vh !important;
+}
+.separator{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+    box-shadow: 0px 1px 0px rgba(0,0,0,.12);
+}

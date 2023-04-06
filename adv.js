@@ -43,10 +43,6 @@ httpXML.onload = function() {
     }
     console.log(resultArrays)
 
-
-    /* 
-                   
-    */
    const advDiv=document.createElement("div")
    advDiv.className="adv";
    advDiv.innerHTML=`
@@ -78,4 +74,8 @@ httpXML.onload = function() {
    `
    const right=document.querySelector(".right")
    right.appendChild(advDiv);
+
+   //get and use image Dirs
+
+    
 }
