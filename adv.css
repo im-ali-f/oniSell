@@ -268,3 +268,9 @@ html {
     width: 6.5vh;
     height: 6.5vh;
 }
+#dotSection{
+    text-align: center;
+}
+.slideshow-container{
+    margin-bottom: 1rem;
+}

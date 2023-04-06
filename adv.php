@@ -33,39 +33,7 @@ $id = $_REQUEST["id"];
         </div>
         <div class="pageBody">
             <div class="left">
-                <!-- Slideshow container -->
-                <div class="slideshow-container">
-
-                    <!-- Full-width images with number and caption text -->
-                    <!--
-                    <div class="mySlides fade">
-                        <div class="divInnerImage"><img src="assets/peakpx.jpg" class="innerImage"></div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="divInnerImage"><img src="assets/wp8440836-anime-red-and-black-wallpapers.png" class="innerImage"></div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="divInnerImage"><img src="assets/wp9142818-red-and-black-4k-pc-wallpapers.jpg" class="innerImage"></div>
-                    </div>
-                    -->
-                    <!-- Next and previous buttons -->
-                    <!--
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    -->
-                </div>
-                <br>
-
-                <!-- The dots/circles -->
-                <div style="text-align:center" id="dotSection">
-                <!--
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                -->
-                </div>
+                               
                 <a href="#" class="report">ثبت تخلف یا مشکل در آگهی</a>
             </div>
 
