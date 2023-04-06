@@ -40,7 +40,7 @@ httpXML.onload = function() {
     console.log(xmlJSON)
     if (xmlJSON !=[] && xmlJSON != ""){
       resultArrays=JSON.parse(xmlJSON);
-    }
+   
     console.log(resultArrays)
 
    const advDiv=document.createElement("div")
@@ -77,7 +77,7 @@ httpXML.onload = function() {
 
    
 
-    
+ }    
 }
 //get and use image Dirs
 const httpXML2=new XMLHttpRequest();
@@ -88,17 +88,9 @@ httpXML2.onload = function() {
     console.log(xmlJSON)
     if (xmlJSON !=[] && xmlJSON != ""){
       resultArrays=JSON.parse(xmlJSON);
-    }
+    
     console.log(resultArrays)
 
-
-    /*
-
-                    
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    
-*/
 
    const sideShow=document.createElement("div")
    sideShow.className="slideshow-container";
@@ -119,7 +111,16 @@ httpXML2.onload = function() {
 
                
 
- 
-
+   const dot=document.createElement("div")
+   dot.id="dotSection";
+   counter=0;
+   resultArrays.forEach(row => {
+    counter+=1;
+     dot.innerHTML+=`
+      <span class="dot" onclick="currentSlide(${counter})"></span>      
+   `
+   });
+   left.appendChild(dot);
     
+}
 }
