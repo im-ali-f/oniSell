@@ -14,7 +14,6 @@ const subGroupSection=document.querySelector("#selectSubGroup")
 selectGroup.addEventListener("change",(e)=>{
     let counter=0;
     let selected=e.target.value;
-    console.log(selected)
     if(selected == "realestate"){
         subGroupSection.removeAttribute("disabled")
         subGroupSection.innerHTML="";
@@ -159,15 +158,14 @@ let maxPrice=0;
 let condition=0;
 let group=0;
 let subGroup=0;
-
+let searchText=0;
 function callXml() {
    
     const httpXML=new XMLHttpRequest();
-    httpXML.open("GET", `getAdvertisements.php?city=${city}&minPrice=${minPrice}&maxPrice=${maxPrice}&condition=${condition}&group=${group}&subGroup=${subGroup}&title=0`);
+    httpXML.open("GET", `getAdvertisements.php?city=${city}&minPrice=${minPrice}&maxPrice=${maxPrice}&condition=${condition}&group=${group}&subGroup=${subGroup}&title=${searchText}`);
     httpXML.send();
     httpXML.onload = function() {
        let xmlTxt=httpXML.responseText;
-       console.log(xmlTxt)
        let resultArrays=null;
        if (xmlTxt !=[] && xmlTxt != ""){
             resultArrays=JSON.parse(xmlTxt);
@@ -240,58 +238,8 @@ document.addEventListener("DOMContentLoaded",(e)=>{
    
     callXml()
 })
-
-
-let gotadvs=0;
 const searchInput=document.querySelector("#search")
 searchInput.addEventListener("input",(e)=>{
-    const searchText=e.target.value
-    const httpXML=new XMLHttpRequest();
-    httpXML.open("GET", `getAdvertisements.php?city=${city}&minPrice=${minPrice}&maxPrice=${maxPrice}&condition=${condition}&group=${group}&subGroup=${subGroup}&title=${searchText}`);
-    httpXML.send();
-    httpXML.onload = function() {
-       let xmlTxt=httpXML.responseText;
-       console.log(xmlTxt)
-       let resultArrays=null;
-       if (xmlTxt !=[] && xmlTxt != ""){
-            resultArrays=JSON.parse(xmlTxt);
-
-            const advSection=document.querySelector(".advSection")
-            advSection.innerHTML="";
-
-
-            resultArrays.forEach(array => {
-           
-            const myDiv=document.createElement("div");
-            myDiv.className="adv";
-            myDiv.id=array["id"]
-            myDiv.innerHTML=`
-                    <div class="advImage">
-                    <img class="img" src="${array["imgDir"]}" alt="image of and Adv" >
-                    </div>
-                    <div class="advTexts">
-                        <div class="title">${array["title"]}</div>
-                        <div class="description">
-                            <div class="condition">${array["condition"]}</div>
-                            <div class="price">قیمت : ${array["price"] } تومان</div>
-                        </div>
-                    </div>
-            `
-            advSection.appendChild(myDiv)
-            myDiv.addEventListener("click",(e)=>{
-                window.location.replace("adv.php?id="+myDiv.id+"&city="+city);
-            })
-            });
-        }
-        else{
-            const advSection=document.querySelector(".advSection")
-            advSection.innerHTML="";
-            const myDiv=document.createElement("div");
-            myDiv.className="error";
-            myDiv.innerHTML="با محدودیت های اعمال شده آگهی پیدا نشد"
-            advSection.appendChild(myDiv)
-           
-        }
-       
-    }
-});
+    searchText=e.target.value
+    callXml()
+})
