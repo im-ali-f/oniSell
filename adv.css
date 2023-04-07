@@ -274,3 +274,17 @@ html {
 .slideshow-container{
     margin-bottom: 1rem;
 }
+.back{
+    padding: 0.5rem 2rem;
+    color: var(--errorText);
+    font-family: onifont;
+    font-size: 2.4vh;
+    text-align: center;
+    transition: all ease-in-out 0.2s;
+    border: 2px solid var(--errorText);
+    border-radius: 8px;
+}
+.back:hover{
+    background-color: var(--errorElement);
+    transition: all ease-in-out 0.2s;
+}

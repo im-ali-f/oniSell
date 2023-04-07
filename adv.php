@@ -1,5 +1,6 @@
 <?php
 $id = $_REQUEST["id"];
+$city=$_REQUEST["city"];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,8 +23,9 @@ $id = $_REQUEST["id"];
                 <a href="#" class="support menuA">پشتیبانی</a>
                 <a href="#" class="profile menuA">پروفایل</a>
             </div>
-            <div class="searchAdv">ddd</div>
-            <?php
+             <?php 
+             echo  "<a href=\"http://onisell.ir/advPage.php?city=$city\" class=\"back\">بازگشت</a>";
+            
             echo "<div class=\"idDiv\" value=\"$id\">$id</div>";
             ?>
             <div link="#" class="logo">

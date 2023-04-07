@@ -195,7 +195,7 @@ function callXml() {
             `
             advSection.appendChild(myDiv)
             myDiv.addEventListener("click",(e)=>{
-                window.location.replace("adv.php?id="+myDiv.id);
+                window.location.replace("adv.php?id="+myDiv.id+"&city="+city);
             })
             });
         }
