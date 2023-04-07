@@ -250,7 +250,7 @@ html {
 #search{
     background-color: #fff;
     width: 20vw;
-    height: 5rem;
+    height: 5vh;
     color: var(--mainTextGray);
     font-family: onifont;
     font-size: 2vh;

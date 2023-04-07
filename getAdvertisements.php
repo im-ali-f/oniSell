@@ -9,6 +9,7 @@ $maxPrice=intval($_REQUEST["maxPrice"]);
 $condition=$_REQUEST["condition"];
 $group=$_REQUEST["group"];
 $subGroup=$_REQUEST["subGroup"];
+$titleToSearch=$_REQUEST["title"];
 
 $db = new PDO("mysql:host=www.onisell.ir;dbname=fijmaclt_onisellDataBase", "fijmaclt", "bd83Y7t3rF");
 $wholeQuery="SELECT * FROM `adv` WHERE `city` = '$city' ";
@@ -36,6 +37,12 @@ elseif($minPrice==0 && $maxPrice !=0){
     $minMaxPriceQuery="AND `price` <= $maxPrice";
     $wholeQuery.=$minMaxPriceQuery;
 }
+if($titleToSearch !=0){
+    $titleQuery="AND `title` LIKE '%$titleToSearch%'";
+    $wholeQuery.=$titleQuery;
+
+}
+
 $lastResult=[];
 $result=$db->query($wholeQuery);
 $result=$result->fetchAll();
