@@ -34,7 +34,9 @@ $db->exec($query);
                 <a href="#" class="support menuA">پشتیبانی</a>
                 <a href="#" class="profile menuA">پروفایل</a>
             </div>
-            <div class="searchAdv">ddd</div>
+            <div class="searchAdv">
+                <input type="text" name="search" id="search" placeholder="موضوع مورد نظر">
+            </div>
             <?php
             echo "<div class=\"chosenCity\" value=\"$city\">$city</div>";
             ?>

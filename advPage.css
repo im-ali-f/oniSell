@@ -12,6 +12,7 @@
     --mainElements:#A9A9A9;
     --mainElementsLighter:#d1cccc;
     --mainElementsLight:#bcb8b8;
+    --mainElementsLightest:#e7e1e1;
     --mainElementGreen:#7CDF7C;
     --mainElementGreenDarker:#6cd56c;
     --mainElementGreenLighter:#92ec92;
@@ -124,8 +125,8 @@ html {
 }
 .adv{
     margin: auto;
-    width: 49vh;
-    max-width: 50vh;
+    width: 44.5vh;
+    max-width: 44.5vh;
     display: flex;
     direction: ltr;
     justify-content: space-between;
@@ -245,4 +246,26 @@ html {
     margin-bottom: 2rem;
     border-radius: 8px;
     text-align: center;
+}
+#search{
+    background-color: #fff;
+    width: 20vw;
+    height: 5rem;
+    color: var(--mainTextGray);
+    font-family: onifont;
+    font-size: 2vh;
+    transition: 0.2s all ease-in-out;
+    padding: 1rem;
+    border-radius: 8px;
+    direction: rtl;
+}
+#search:hover{
+    background-color: var(--mainElementsLightest);
+    transition: 0.2s all ease-in-out;
+    color: rgb(255, 254, 254);
+}
+#search:focus{
+    background-color: var(--mainElementsLightest);
+    transition: 0.2s all ease-in-out;
+    color: rgb(255, 254, 254);
 }
