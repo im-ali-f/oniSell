@@ -63,3 +63,34 @@ html {
     padding: 8px;
     box-shadow: 0px 1px 0px rgba(0,0,0,.12);
 }
+.menuBar{
+    margin: auto;
+    width: 100%;
+    background-color: var(--mainElementsLight);
+    height: 7vh;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 3rem;
+    position: fixed;
+}
+.menuA{
+    padding: 1rem;
+    color: var(--mainTextGrayDarker);
+    font-family: onifont;
+    font-size: 2.9vh;
+    text-align: center;
+    transition: all ease-in-out 0.2s;
+}
+.menuA:hover{
+    color: var(--mainTextGray);
+    transition: all ease-in-out 0.2s;
+}
+.menuContainer{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+}
