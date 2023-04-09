@@ -35,9 +35,7 @@
                 <div class="userMenus">
                     <div class="UserSubMenu activeMenu" id="myAdvsMenu">آگهی های من</div>
                     <div class="UserSubMenu" id="myInfoMenu">اطلاعات من</div>
-                    <div class="UserSubMenu" id="myInfoMenu">اطلاعات من</div>
-                    <div class="UserSubMenu" id="myInfoMenu">اطلاعات من</div>
-                    <div class="UserSubMenu" id="myInfoMenu">اطلاعات من</div>
+                    <a href="logout.php" class="UserSubMenu" id="logout">خروج</a>
                 </div>
             </div>
 

@@ -129,8 +129,13 @@ html {
     border-radius: 8px;
     overflow: hidden;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
 }
 .UserSubMenu{
+    width: 100%;
     border: 3px solid var(--bodyColor);
     color: var(--mainTextGrayDarker);
     font-family: onifont;
@@ -150,4 +155,15 @@ html {
 .UserSubMenu:hover{
     border: 3px solid var(--mainTextGreen);
     transition: 0.2s all ease-in-out;
+}
+#logout{
+    border: 3px solid var(--errorElement);
+    color: var(--errorText); 
+    transition: 0.2s all ease-in-out;
+    margin-top: 40vh;
+}
+#logout:hover{
+    color: white; 
+    transition: 0.2s all ease-in-out;
+    background-color: var(--errorText); 
 }
