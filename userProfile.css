@@ -94,3 +94,60 @@ html {
     justify-content: space-around;
     align-items: center;
 }
+.pageBody{
+    width:100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin-bottom: 5rem;
+    padding-top: 3rem;
+}
+.left{
+    width: 70%;
+    border: 2px solid var(--mainTextGray);
+    border-radius: 8px;
+    padding: 3rem;
+    height: 400vh;
+}
+.right{
+    width: 20%;
+    padding: 3rem;
+    border-radius: 8px;
+    background-color: var(--mainElementsLightest);
+    border-radius: 8px;
+    background-color: var(--invisible);
+}
+.userMenus{
+    width: 20%;
+    position: fixed;
+    height: 80vh;
+    background-color: var(--mainElementsLightest);
+    top: 12.5vh;
+    right: 6vh;
+    font-family: onifont;
+    font-size: 3.5vh;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 1rem;
+}
+.UserSubMenu{
+    border: 3px solid var(--bodyColor);
+    color: var(--mainTextGrayDarker);
+    font-family: onifont;
+    font-size: 2.9vh;
+    text-align: center;
+    margin-top: 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+.activeMenu{
+    border: 3px solid var(--mainTextGreen);
+    color: white; 
+    transition: 0.2s all ease-in-out;
+    background-color: var(--mainElementGreenDarker);
+}
+.UserSubMenu:hover{
+    border: 3px solid var(--mainTextGreen);
+    transition: 0.2s all ease-in-out;
+}

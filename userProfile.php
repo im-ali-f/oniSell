@@ -24,6 +24,25 @@
 
         </div>
 
+
+        <div class="pageBody">
+            <div class="left">
+
+            </div>
+
+
+            <div class="right">
+                <div class="userMenus">
+                    <div class="UserSubMenu activeMenu" id="myAdvsMenu">آگهی های من</div>
+                    <div class="UserSubMenu" id="myInfoMenu">اطلاعات من</div>
+                    <div class="UserSubMenu" id="myInfoMenu">اطلاعات من</div>
+                    <div class="UserSubMenu" id="myInfoMenu">اطلاعات من</div>
+                    <div class="UserSubMenu" id="myInfoMenu">اطلاعات من</div>
+                </div>
+            </div>
+
+
+        </div>
     </div>
 </body>
 
