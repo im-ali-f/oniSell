@@ -134,7 +134,7 @@ html {
     align-items:center;
 
 }
-.UserSubMenu{
+.userSubMenu{
     width: 100%;
     border: 3px solid var(--bodyColor);
     color: var(--mainTextGrayDarker);
@@ -152,7 +152,7 @@ html {
     transition: 0.2s all ease-in-out;
     background-color: var(--mainElementGreenDarker);
 }
-.UserSubMenu:hover{
+.userSubMenu:hover{
     border: 3px solid var(--mainTextGreen);
     transition: 0.2s all ease-in-out;
 }
